@@ -1,0 +1,714 @@
+body
+{
+    background-color:white;
+    color:$green;
+}
+
+a
+{
+    color:$green;
+    text-decoration:underline;
+}
+
+p
+{
+    margin-bottom:0.75em;
+}
+
+ul, ol
+{
+    margin-left:25px;
+    margin-bottom:0.75em;
+}
+
+hr
+{
+    height:0;
+    border:0;
+    border-bottom:2px solid $green;
+    width:160px;
+    margin:0 auto;
+    display:block;
+    margin-bottom:0.75em;
+}
+
+#page-wrapper
+{
+    overflow: hidden;
+}
+
+#top
+{
+    background:white;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    box-shadow:0 4px 5px rgba(0,0,0,0.4);
+    z-index: 100;
+
+    & > div
+    {
+        width:100%;
+        max-width:980px;
+        margin:0 auto;
+    }
+
+    #logo
+    {
+        display: block;
+        padding-top: 5px;
+        float: left;
+        margin-right: 75px;
+    }
+
+    #block-system-main-menu
+    {
+        .content > ul
+        {
+            list-style:none;
+            margin:0;
+            padding:0;
+            float: left;
+
+            li
+            {
+                float: left;
+                display: block;
+                list-style:none;
+                margin:0 5px;
+                padding:0;
+
+                a
+                {
+                    display: block;
+                    text-decoration:none;
+                    color:$green;
+                    padding:0 10px;
+                    text-transform:uppercase;
+
+                    &:hover
+                    {
+                        color:white;
+                        text-shadow:-1px 1px 2px rgba(0,0,0,0.4);
+                        box-shadow:0 4px 5px rgba(0,0,0,0.4);
+                        background: $green; /* Old browsers */
+                        background: -moz-linear-gradient(top, #117e40 0%, #0f6e38 100%); /* FF3.6+ */
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#117e40), color-stop(100%,#0f6e38)); /* Chrome,Safari4+ */
+                        background: -webkit-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* Chrome10+,Safari5.1+ */
+                        background: -o-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* Opera 11.10+ */
+                        background: -ms-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* IE10+ */
+                        background: linear-gradient(to bottom, #117e40 0%,#0f6e38 100%); /* W3C */
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#117e40', endColorstr='#0f6e38',GradientType=0 ); /* IE6-9 */
+                    }
+                }
+            }
+        }
+    }
+
+    #block-menu-menu-social-menu
+    {
+        float: right;
+
+        .content > ul
+        {
+            list-style:none;
+            margin:0;
+            padding:0;
+
+            li
+            {
+                float: left;
+                list-style:none;
+                margin: 0;
+                padding: 0;
+                display: block;
+
+                &:hover
+                {
+                    box-shadow:0 4px 5px rgba(0,0,0,0.4);
+                    background: $green; /* Old browsers */
+                    background: -moz-linear-gradient(top, #117e40 0%, #0f6e38 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#117e40), color-stop(100%,#0f6e38)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* IE10+ */
+                    background: linear-gradient(to bottom, #117e40 0%,#0f6e38 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#117e40', endColorstr='#0f6e38',GradientType=0 ); /* IE6-9 */
+                }
+
+                a
+                {
+                    display: block;
+                    text-decoration:none;
+                    font-size:0;
+                    color:transparent;
+                    width: 42px;
+                    background-repeat:no-repeat;
+                    background-position:center center;
+
+                    &:before
+                    {
+                        position: absolute;
+                        left:-99999px;
+                    }
+
+                    &.tw
+                    {
+                        background-image:url(../images/tw-green.png);
+
+                        &:hover, &:before
+                        {
+                            background-image: url(../images/tw-white.png);
+                        }
+                    }
+                    &.fb
+                    {
+                        background-image:url(../images/fb-green.png);
+
+                        &:hover, &:before
+                        {
+                            background-image: url(../images/fb-white.png);
+                        }
+                    }
+                    &.ig
+                    {
+                        background-image:url(../images/ig-green.png);
+
+                        &:hover, &:before
+                        {
+                            background-image: url(../images/ig-white.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#bottom
+{
+    background:white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow:0 -4px 5px rgba(0,0,0,0.4);
+    z-index: 100;
+
+    & > div
+    {
+        width:100%;
+        max-width:980px;
+        margin:0 auto;
+
+        & > div
+        {
+            position: relative;
+        }
+    }
+
+    #start-a-project
+    {
+        display: block;
+        width: 146px;
+        margin:0 auto;
+        line-height:55px;
+
+        img
+        {
+            vertical-align: middle;
+        }
+    }
+
+    #good-times
+    {
+        display: block;
+        position: absolute;
+        right: 8px;
+        top:-44px;
+    }
+
+    #block-menu-menu-footer-menu
+    {
+        position: absolute;
+        left:0;
+        top:0;
+
+        .content > ul
+        {
+            list-style:none;
+            margin:0;
+            padding:0;
+
+            li
+            {
+                display: inline-block;
+                line-height:55px;
+                margin: 0 2px;
+                padding: 0;
+
+                a
+                {
+                    display: block;
+                    width: 29px;
+                    height: 55;
+                    background-repeat:no-repeat;
+                    background-position:center center;
+                    font-size:0;
+                    color:transparent;
+                    padding:0 6px;
+
+                    &.email
+                    {
+                        background-image:url(../images/email.png);
+
+                        &:hover, &:before
+                        {
+                            background-image:url(../images/email-hover.png);
+                        }
+                    }
+                    &.location
+                    {
+                        background-image:url(../images/location.png);
+
+                        &:hover, &:before
+                        {
+                            background-image:url(../images/location-hover.png);
+                        }
+                    }
+                    &.phone
+                    {
+                        background-image:url(../images/phone.png);
+
+                        &:hover, &:before
+                        {
+                            background-image:url(../images/phone-hover.png);
+                        }
+                    }
+                    &.twitter
+                    {
+                        background-image:url(../images/tw2.png);
+
+                        &:hover, &:before
+                        {
+                            background-image:url(../images/tw2-hover.png);
+                        }
+                    }
+
+                    &:before
+                    {
+                        content:"";
+                        display: block;
+                        position: absolute;
+                        left: -99999px;;
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.navbar-administration
+{
+    #top
+    {
+        top:39px;
+    }
+}
+body.navbar-administration.navbar-vertical.navbar-tray-open
+{
+    #top, #bottom
+    {
+        left:240px;
+        width: calc(100% - 240px);
+    }
+}
+body.navbar-administration.navbar-horizontal.navbar-tray-open
+{
+    #top
+    {
+        top:79px;
+    }
+}
+
+#main-wrapper
+{
+    padding:55px 0;
+    width:100%;
+    max-width:980px;
+    margin:0 auto;
+
+    & > div
+    {
+        padding:0 30px;
+
+        & > div
+        {
+            position: relative;
+        }
+    }
+}
+#page-title
+{
+    margin-top:50px;
+}
+body.culture,
+body.work,
+body.services,
+body.good-times,
+body.contact,
+body.start-a-project
+{
+    #page-title
+    {
+        color:white;
+        text-transform:uppercase;
+        font-weight:300;
+        font-size:3.7em;
+        text-align:center;
+        line-height:70px;
+        padding-top:115px;
+        padding-bottom:310px;
+        position: relative;
+        margin-top:0;
+
+        &:before
+        {
+            content:"";
+            display: block;
+            height:495px;
+            width: 1220px;
+            position: absolute;
+            top:0;
+            left:50%;
+            margin-left:-610px;
+            background-repeat:no-repeat;
+            background-position:center top;
+            z-index: -1;
+        }
+
+        .icon
+        {
+            vertical-align: middle;
+            margin-top: -20px;
+            margin-right: 18px;
+        }
+    }
+}
+body.culture #page-title:before
+{
+    background-image:url(../images/title-culture.jpg);
+}
+body.work #page-title:before
+{
+    background-image:url(../images/title-work.jpg);
+}
+body.services #page-title:before
+{
+    background-image:url(../images/title-services.jpg);
+}
+body.good-times #page-title:before
+{
+    background-image:url(../images/title-good-times.jpg);
+}
+body.contact #page-title:before
+{
+    background-image:url(../images/title-contact.jpg);
+}
+h2.history,
+h2.team,
+h2.community,
+h2.samples,
+h2.clients,
+h2.nice-things,
+h2.why,
+h2.what,
+h2.how
+{
+    color:white;
+    text-transform:uppercase;
+    font-weight:300;
+    font-size:3.7em;
+    text-align:center;
+    position: relative;
+    line-height:300px;
+    clear: both;
+
+    &:before
+    {
+        content:"";
+        display: block;
+        height:300px;
+        width: 1220px;
+        position: absolute;
+        top:0;
+        left:50%;
+        margin-left:-610px;
+        background-repeat:no-repeat;
+        background-position:center top;
+        z-index: -1;
+    }
+
+    .icon
+    {
+        vertical-align: middle;
+        margin-top: -20px;
+        margin-right: 18px;
+    }
+}
+h2.history:before
+{
+    background-image:url(../images/title-history.jpg);
+}
+h2.team:before
+{
+    background-image:url(../images/title-team.jpg);
+}
+h2.community:before
+{
+    background-image:url(../images/title-community.jpg);
+}
+h2.samples:before
+{
+    background-image:url(../images/title-samples.jpg);
+}
+h2.clients:before
+{
+    background-image:url(../images/title-clients.jpg);
+}
+h2.nice-things:before
+{
+    background-image:url(../images/title-nice-things.jpg);
+}
+h2.why:before
+{
+    background-image:url(../images/title-why.jpg);
+}
+h2.what:before
+{
+    background-image:url(../images/title-what.jpg);
+}
+h2.how:before
+{
+    background-image:url(../images/title-how.jpg);
+}
+
+#devices
+{
+    margin:-184px auto 0 auto;
+    display: block;
+}
+
+#skip-link .element-invisible.element-focusable:active,
+#skip-link .element-invisible.element-focusable:focus
+{
+    margin-top:55px;
+    margin-bottom:-55px;
+    display: block;
+}
+
+#history-content
+{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    @include columns;
+}
+#work-intro
+{
+    margin-top:40px;
+    @include columns;
+}
+.columns
+{
+    @include columns;
+}
+h2.samples
+{
+    margin-top:50px;
+}
+
+ul.tabs.primary
+{
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    border-bottom: 0;
+
+    li a
+    {
+        border-style:solid;
+        border-top: 0;
+
+        &:hover
+        {
+            border-bottom-color:#bbb;
+        }
+    }
+
+    li.active
+    {
+        display: none;
+    }
+}
+div.messages
+{
+    margin-top:56px;
+    margin-bottom: -55px;
+    padding-left: 170px;
+    padding-left: calc(50% - 310px);
+    background-position:130px center;
+    background-position: calc(50% - 340px) center;
+}
+
+#map
+{
+    width:100%;
+    height:370px;
+    border:0;
+    border-top:10px solid $green;
+    border-bottom:10px solid $green;
+    display: block;
+    margin-top: 40px;
+}
+#contact-info
+{
+    margin:40px auto 60px auto;
+    font-size:1.75em;
+    line-height:100%;
+    font-weight: bold;
+    width:100%;
+    max-width:760px;
+    position: relative;
+    left: 60px;
+    overflow: hidden;
+
+    & > div
+    {
+        float: left;
+        width:50%;
+        background-repeat:no-repeat;
+        background-position:left center;
+        margin-bottom:10px;
+
+        & > div
+        {
+            padding:16px 0 16px 60px;
+        }
+
+        a
+        {
+            display: block;
+            text-decoration:none;
+
+            &:hover
+            {
+                text-decoration:none;
+            }
+        }
+
+        &.location
+        {
+            background-image: url(../images/location-large.png);
+
+            & > div
+            {
+                padding-top:0;
+                padding-bottom:0;
+            }
+        }
+        &.phone
+        {
+            background-image: url(../images/phone-large.png);
+        }
+        &.email
+        {
+            background-image: url(../images/email-large.png);
+        }
+        &.twitter
+        {
+            background-image: url(../images/tw2-large.png);
+        }
+    }
+}
+
+body.start-a-project
+{
+    #page-wrapper
+    {
+        background:#282828 url(../images/photoshop-frame-top-repeat.png) repeat-x 23px top;
+        margin-top:55px;
+
+        &:before
+        {
+            content:"";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width:12px;
+            height: 100%;
+            background: url(../images/photoshop-frame-left-repeat.png) repeat-y left top;
+            z-index: -1;
+        }
+        &:after
+        {
+            content:"";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width:100%;
+            height: 14px;
+            background: url(../images/photoshop-frame-bottom-repeat.png) repeat-x left top;
+            z-index: 1;
+        }
+
+        & > div
+        {
+            background:url(../images/photoshop-frame-left.png) no-repeat left top;
+
+            &:before
+            {
+                content:"";
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 32px;
+                width:100%;
+                height: 14px;
+                background: url(../images/photoshop-frame-bottom-left.png) no-repeat left top;
+            }
+            &:after
+            {
+                content:"";
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 32px;
+                width:100%;
+                height: 14px;
+                background: url(../images/photoshop-frame-bottom-right.png) no-repeat right top;
+            }
+
+            & > div
+            {
+                background:url(../images/photoshop-frame-top-right.png) no-repeat right top;
+            }
+        }
+    }
+
+    #main-wrapper
+    {
+        & > div > div
+        {
+            background:white;
+            min-height:800px;
+        }
+    }
+}
