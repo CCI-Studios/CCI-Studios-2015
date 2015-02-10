@@ -29,10 +29,10 @@
     {
         //fade in the content
         var $newRow = getRows().eq(index);
-        getRows().not($newRow).animate({
+        getRows().not($newRow).css("z-index","0").animate({
             "opacity":"0"
         });
-        $newRow.animate({
+        $newRow.css("z-index","1").animate({
             "opacity":"1"
         });
 
