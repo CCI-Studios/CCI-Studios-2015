@@ -191,7 +191,6 @@ hr
 #bottom
 {
     background:white;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -335,23 +334,6 @@ body.navbar-administration.navbar-horizontal.navbar-tray-open
     }
 }
 
-#main-wrapper
-{
-    padding:55px 0;
-    width:100%;
-    max-width:980px;
-    margin:0 auto;
-
-    & > div
-    {
-        padding:0 30px;
-
-        & > div
-        {
-            position: relative;
-        }
-    }
-}
 #page-title
 {
     margin-top:50px;

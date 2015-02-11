@@ -97,6 +97,205 @@
     }
 }
 
+.view-team
+{
+    background: url(../images/bg-brick.jpg) no-repeat top center;
+    background-size: cover;
+    line-height: 1;
+    padding-bottom: 60px;
+    position: relative;
+    color: white;
+    
+    h2
+    {
+        text-align: center;
+        line-height: 100px;
+        text-transform: uppercase;
+        font-size: 2.6em;
+        letter-spacing: 0.1px;
+    }
+    
+    .view-content
+    {
+        font-size: 0;
+    }
+    .thumb
+    {
+        font-size: 16px;
+        width: 19.8%;
+        padding-bottom: 16.36%;
+        position: relative;
+        z-index: 1;
+        margin: 0.1%;
+        display: inline-block;
+        
+        & > div
+        {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        &:hover
+        {
+            .thumb-detail
+            {
+                display: block;
+            }
+            .photo-thumb img
+            {
+                -webkit-filter: blur(4px);
+                filter: blur(4px);
+            }
+        }
+    }
+    .photo-thumb img
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+    .thumb-detail
+    {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+        line-height: 1;
+        
+        &:before
+        {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #106232;
+            opacity: 0.6;
+        }
+        
+        & > div
+        {
+            position: relative;
+            z-index: 1;
+            padding: 25px 25px;
+        }
+    }
+    .name
+    {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.8em;
+        line-height: 0.9;
+        height: 2.1em;
+    }
+    .title
+    {
+        font-size: 0.9em;
+        height: 2.7em;
+    }
+    .full-bio
+    {
+        text-transform: uppercase;
+        
+        & > div
+        {
+            width: 114px;
+            height: 24px;
+            line-height: 24px;
+            border: 3px solid white;
+            margin: 0 auto;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    }
+    .btn-bio
+    {
+        font-size: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 2;
+    }
+    
+    .bio
+    {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        right: 0;
+        height: 440px;
+        padding: 20px;
+        font-size: 16px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        z-index: 3;
+        
+        & > div
+        {
+            max-width: 940px;
+            margin: 0 auto;
+            position: relative;
+            
+            & > div
+            {
+                max-width: 35%;
+                margin: 0 0 0 auto;
+            }
+        }
+        
+        .close
+        {
+            font-size: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25px;
+            height: 25px;
+            background: url(../images/btn-close.png) no-repeat;
+        }
+        
+        .name
+        {
+            font-size: 2em;
+            height: auto;
+            padding-top: 50px;
+            line-height: 1.2;
+        }
+        .title
+        {
+            font-weight: bold;
+            font-size: 1em;
+        }
+        .body
+        {
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+        .photo
+        {
+            display: none;
+        }
+    }
+}
 .view-team-members .view-content
 {
     position: relative;
