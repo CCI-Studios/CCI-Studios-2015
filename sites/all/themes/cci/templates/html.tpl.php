@@ -52,6 +52,7 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <?php print $styles; ?>
+  <link href="<?php print base_path();?>sites/all/themes/cci/css/_kerning.css" type="text/css" rel="stylesheet" />
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

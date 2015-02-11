@@ -1,0 +1,4 @@
+.view-culture-information-headings .view-content .views-row-3 .focusable
+{
+    -letter-kern: -letter-pairs('VA': -3px);
+}

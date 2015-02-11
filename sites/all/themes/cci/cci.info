@@ -12,6 +12,7 @@ scripts[] = js/samples.js
 scripts[] = js/phases.js
 scripts[] = js/map.js
 scripts[] = js/css3-multi-column.min.js
+scripts[] = js/kerning.js
 
 stylesheets[all][] = css/screen.css
 
