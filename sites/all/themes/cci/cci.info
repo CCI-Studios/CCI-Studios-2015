@@ -2,7 +2,6 @@ name = CCI Studios
 description = CCI Studios Custom
 core = 7.x
 
-scripts[] = js/icons.js
 scripts[] = js/culture-information.js
 scripts[] = js/team.js
 scripts[] = js/community-photos.js

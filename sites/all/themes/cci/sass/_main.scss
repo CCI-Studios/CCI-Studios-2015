@@ -349,55 +349,35 @@ body.start-a-project
     {
         color:white;
         text-transform:uppercase;
-        font-weight:300;
+        font-weight:bold;
         font-size:3.7em;
         text-align:center;
-        line-height:70px;
-        padding-top:115px;
-        padding-bottom:310px;
+        line-height:350px;
+        height: 350px;
         position: relative;
         margin-top:0;
-
-        &:before
-        {
-            content:"";
-            display: block;
-            height:495px;
-            width: 1220px;
-            position: absolute;
-            top:0;
-            left:50%;
-            margin-left:-610px;
-            background-repeat:no-repeat;
-            background-position:center top;
-            z-index: -1;
-        }
-
-        .icon
-        {
-            vertical-align: middle;
-            margin-top: -20px;
-            margin-right: 18px;
-        }
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
 }
-body.culture #page-title:before
+body.culture #page-title
 {
     background-image:url(../images/title-culture.jpg);
 }
-body.work #page-title:before
+body.work #page-title
 {
     background-image:url(../images/title-work.jpg);
 }
-body.services #page-title:before
+body.services #page-title
 {
     background-image:url(../images/title-services.jpg);
 }
-body.good-times #page-title:before
+body.good-times #page-title
 {
     background-image:url(../images/title-good-times.jpg);
 }
-body.contact #page-title:before
+body.contact #page-title
 {
     background-image:url(../images/title-contact.jpg);
 }
