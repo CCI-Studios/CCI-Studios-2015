@@ -36,6 +36,10 @@ hr
 {
     overflow: hidden;
 }
+#main-wrapper
+{
+    padding-top: 51px;
+}
 
 #top
 {
@@ -227,7 +231,7 @@ hr
     }
 }
 
-#bottom
+#bottom1
 {
     background:white;
     bottom: 0;
@@ -359,7 +363,7 @@ body.navbar-administration
 }
 body.navbar-administration.navbar-vertical.navbar-tray-open
 {
-    #top, #bottom
+    #top, #bottom1
     {
         left:240px;
         width: calc(100% - 240px);

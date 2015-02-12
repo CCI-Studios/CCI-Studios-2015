@@ -17,7 +17,7 @@ scripts[] = js/kerning.js
 stylesheets[all][] = css/screen.css
 
 regions[top] = Top
-regions[header] = Header
 regions[help] = Help
 regions[content] = Content
-regions[bottom] = Bottom
+regions[bottom1] = Bottom 1
+regions[bottom2] = Bottom 2

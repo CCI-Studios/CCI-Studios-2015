@@ -85,11 +85,6 @@
       <?php print render($page['top']); ?>
     </div></div></div>
 
-    <div id="header"><div><div>
-      <?php print render($page['header']); ?>
-      <?php print $messages; ?>
-    </div></div></div> <!-- /#header -->
-
     <div id="main-wrapper"><div><div>
       <div id="content"><div><div>
         <a id="main-content"></a>
@@ -103,8 +98,12 @@
       </div></div></div> <!-- /#content -->
     </div></div></div> <!-- /#main-wrapper -->
 
-    <div id="bottom"><div><div>
-      <?php print render($page['bottom']); ?>
-  </div></div></div> <!-- /#bottom -->
+    <div id="bottom1"><div><div>
+        <?php print render($page['bottom1']); ?>
+    </div></div></div> <!-- /#bottom1 -->
+
+    <div id="bottom2"><div><div>
+        <?php print render($page['bottom2']); ?>
+    </div></div></div> <!-- /#bottom2 -->
 
   </div></div></div></div> <!-- /#page-wrapper -->
