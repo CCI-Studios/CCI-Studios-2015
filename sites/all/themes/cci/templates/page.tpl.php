@@ -103,6 +103,10 @@
     </div></div></div> <!-- /#bottom1 -->
 
     <div id="bottom2"><div><div>
+        <div class="good-times">
+            
+        </div>
+        
         <?php print render($page['bottom2']); ?>
     </div></div></div> <!-- /#bottom2 -->
 

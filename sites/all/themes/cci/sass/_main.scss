@@ -46,10 +46,11 @@ hr
     position: fixed;
     top:0;
     left: 0;
-    width: 100%;
+    right: 0;
     z-index: 100;
     height: 51px;
     background: #106232;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.22);
 
     #logo
     {
@@ -233,154 +234,68 @@ hr
 
 #bottom1
 {
-    background:white;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    box-shadow:0 -4px 5px rgba(0,0,0,0.4);
-    z-index: 100;
-
-    & > div
+    background: white;
+}
+#bottom2
+{
+    overflow: hidden;
+    padding-top: 51px;
+    padding-bottom: 80px;
+    background: url(../images/bg-footer.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+    
+    a
     {
-        width:100%;
-        max-width:980px;
-        margin:0 auto;
-
-        & > div
-        {
-            position: relative;
-        }
+        color: white;
     }
-
-    #start-a-project
+    
+    .good-times
     {
         display: block;
-        width: 146px;
-        margin:0 auto;
-        line-height:55px;
-
-        img
+        margin-top: -51px;
+        position: relative;
+        height: 51px;
+        background: $green;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.22);
+        margin-bottom: 75px;
+        
+        &:after
         {
-            vertical-align: middle;
-        }
-    }
-
-    #good-times
-    {
-        display: block;
-        position: absolute;
-        right: 8px;
-        top:-44px;
-    }
-
-    #block-menu-menu-footer-menu
-    {
-        position: absolute;
-        left:0;
-        top:0;
-
-        .content > ul
-        {
-            list-style:none;
-            margin:0;
-            padding:0;
-
-            li
-            {
-                display: inline-block;
-                line-height:55px;
-                margin: 0 2px;
-                padding: 0;
-
-                a
-                {
-                    display: block;
-                    width: 29px;
-                    height: 55;
-                    background-repeat:no-repeat;
-                    background-position:center center;
-                    font-size:0;
-                    color:transparent;
-                    padding:0 6px;
-
-                    &.email
-                    {
-                        background-image:url(../images/email.png);
-
-                        &:hover, &:before
-                        {
-                            background-image:url(../images/email-hover.png);
-                        }
-                    }
-                    &.location
-                    {
-                        background-image:url(../images/location.png);
-
-                        &:hover, &:before
-                        {
-                            background-image:url(../images/location-hover.png);
-                        }
-                    }
-                    &.phone
-                    {
-                        background-image:url(../images/phone.png);
-
-                        &:hover, &:before
-                        {
-                            background-image:url(../images/phone-hover.png);
-                        }
-                    }
-                    &.twitter
-                    {
-                        background-image:url(../images/tw2.png);
-
-                        &:hover, &:before
-                        {
-                            background-image:url(../images/tw2-hover.png);
-                        }
-                    }
-
-                    &:before
-                    {
-                        content:"";
-                        display: block;
-                        position: absolute;
-                        left: -99999px;;
-                    }
-                }
-            }
+            content:"";
+            display: block;
+            position: absolute;
+            width: 123px;
+            height: 97px;
+            background: url(../images/good-times.png) no-repeat;
+            right: 15%;
+            top: 0;
         }
     }
 }
 
 body.navbar-administration
 {
-    #top
+    #top, #top #block-system-main-menu
     {
         top:39px;
     }
 }
 body.navbar-administration.navbar-vertical.navbar-tray-open
 {
-    #top, #bottom1
+    #top
     {
         left:240px;
-        width: calc(100% - 240px);
     }
 }
 body.navbar-administration.navbar-horizontal.navbar-tray-open
 {
-    #top
+    #top, #top #block-system-main-menu
     {
         top:79px;
     }
 }
 
-#page-title
-{
-    margin-top:50px;
-}
 body.culture,
 body.work,
 body.services,
@@ -715,5 +630,288 @@ body.start-a-project
             background:white;
             min-height:800px;
         }
+    }
+}
+
+.block.like-what-you-see
+{
+    text-align: center;
+    
+    h2
+    {
+        text-transform: uppercase;
+        font-size: 1.75em;
+        line-height: 1;
+        padding: 28px 0 18px 0;
+    }
+    
+    .content
+    {
+        a
+        {
+            text-decoration: none;
+            display: inline-block;
+            padding: 0 20px;
+            line-height: 45px;
+            text-transform: uppercase;
+            border: 3px solid $green;
+            font-weight: bold;
+            margin-bottom: 28px;
+            
+            &:active
+            {
+                background-color: $green;
+                color: white;
+            }
+        }
+        
+        p
+        {
+            margin: 0;
+        }
+    }
+}
+.block.contact-info
+{
+    background: $green;
+    
+    .content
+    {
+        text-align: center;
+        
+        .address,
+        .email,
+        .phone
+        {
+            display: inline-block;
+            padding: 0 30px 0 42px;
+            font-weight: bold;
+            line-height: 66px;
+            font-size: 1.2em;
+            color: white;
+            background-repeat: no-repeat;
+            background-position: left center;
+            
+            a
+            {
+                color: white;
+                text-decoration: none;
+            }
+        }
+        .address
+        {
+            background-image: url(../images/icon-address.png);
+        }
+        .email
+        {
+            background-image: url(../images/icon-email.png);
+        }
+        .phone
+        {
+            background-image: url(../images/icon-phone.png);
+        }
+        
+        .gmap
+        {
+            height: 365px;
+            width: 100%;
+            color: $green;
+            text-align: left;
+            
+            h2
+            {
+                text-transform: uppercase;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+}
+.block.instagram
+{
+    .content
+    {
+        max-width: 940px;
+        padding: 0 20px;
+        margin: 0 auto 32px auto;
+        
+        a
+        {
+            text-decoration: none;
+        }
+    }
+    
+    h2
+    {
+        text-transform: uppercase;
+        padding-top: 75px;
+        background: url(../images/icon-instagram.png) no-repeat center 25px;
+    }
+    .hashtag
+    {
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    .left
+    {
+        float: left;
+        margin-left: 10px;
+        margin-right: 30px;
+        height: 150px;
+        width: 160px;
+        text-align: center;
+    }
+    .feed
+    {
+        img
+        {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin: 0 5px;
+        }
+    }
+}
+.block.twitter
+{
+    clear: both;
+    
+    .content
+    {
+        max-width: 940px;
+        padding: 0 20px;
+        margin: 0 auto 32px auto;
+        
+        a
+        {
+            text-decoration: none;
+        }
+    }
+    
+    h2
+    {
+        text-transform: uppercase;
+        padding-top: 75px;
+        background: url(../images/icon-twitter.png) no-repeat center 25px;
+    }
+    .name
+    {
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    .left
+    {
+        float: left;
+        margin-left: 10px;
+        margin-right: 30px;
+        height: 150px;
+        width: 160px;
+        text-align: center;
+    }
+    .feed
+    {
+        .tweet
+        {
+            display: inline-block;
+            vertical-align: middle;
+            width: 200px;
+            margin-right: 20px;
+            word-wrap: break-word;
+            
+            .text
+            {
+                margin-bottom: 0.75em;
+                height: 5em;
+                overflow: hidden;
+            }
+            .avatar
+            {
+                display: inline-block;
+                vertical-align: middle;
+                
+                img
+                {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+            .handle
+            {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 15px;
+            }
+            .tco-hidden
+            {
+                position: absolute;
+                left: -9999999px;
+            }
+            b
+            {
+                font-weight: 300;
+            }
+        }
+    }
+}
+.block.spotify
+{
+    clear: both;
+    
+    .content
+    {
+        max-width: 940px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
+    h2
+    {
+        font-size: 0;
+        text-transform: uppercase;
+        padding-top: 75px;
+        margin-bottom: 6px;
+        background: url(../images/icon-spotify.png) no-repeat center 25px;
+    }
+    .label
+    {
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    .left
+    {
+        float: left;
+        margin-left: 10px;
+        margin-right: 30px;
+        height: 132px;
+        width: 160px;
+        text-align: center;
+    }
+    h3
+    {
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    .top3
+    {
+        float: left;
+        min-width: 150px;
+        max-width: 220px;
+        margin-right: 30px;
+        
+        ul
+        {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li
+        {
+            list-style: none;
+            margin: 0;
+            padding: 0 0 0.75em 0;
+        }
+    }
+    .player
+    {
+        float: left;
     }
 }

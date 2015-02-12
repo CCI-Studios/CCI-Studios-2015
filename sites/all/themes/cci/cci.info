@@ -3,6 +3,9 @@ description = CCI Studios Custom
 core = 7.x
 
 scripts[] = js/menu.js
+scripts[] = js/instagram.js
+scripts[] = js/twitter-fetcher.js
+scripts[] = js/twitter.js
 scripts[] = js/culture-information.js
 scripts[] = js/team.js
 scripts[] = js/community-photos.js

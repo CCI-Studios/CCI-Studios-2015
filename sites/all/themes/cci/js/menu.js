@@ -19,5 +19,14 @@
             $("body").toggleClass("menu-open");
             return false;
         });
+        
+        $("#block-system-main-menu .contact").click(function(){
+            var offset = $("#contact").offset();
+            var top = offset.top;
+            $("html, body").animate({
+                "scrollTop":(top-51)+"px"
+            });
+            return false;
+        });
     });
 }(jQuery));
