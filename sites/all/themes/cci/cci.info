@@ -2,6 +2,7 @@ name = CCI Studios
 description = CCI Studios Custom
 core = 7.x
 
+scripts[] = js/front.js
 scripts[] = js/menu.js
 scripts[] = js/instagram.js
 scripts[] = js/twitter-fetcher.js

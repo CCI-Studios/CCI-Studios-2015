@@ -28,5 +28,26 @@
             });
             return false;
         });
+        
+        $(window).scroll(function(){
+            var green = false;
+            if ($("body").hasClass("front"))
+            {
+                green = $(window).scrollTop() > $(window).height() - 65;
+            }
+            else
+            {
+                green = $(window).scrollTop() > 290;
+            }
+            
+            if (green)
+            {
+                $("body").addClass("menu-green");
+            }
+            else
+            {
+                $("body").removeClass("menu-green");
+            }
+        });
     });
 }(jQuery));

@@ -1,29 +1,14 @@
 .front
 {
-    #top
+    #block-system-main,
+    #page-title
     {
-        background: none;
-        box-shadow: none;
-        
-        #logo
-        {
-            padding-top: 12px;
-            
-            img
-            {
-                height: 51px;
-            }
-        }
-        
-        #btn-menu
-        {
-            height: 76px;
-            line-height: 76px;
-        }
+        display: none;
     }
-    
-    #main-wrapper
+    .block.home-header
     {
-        padding-top: 0;
+        height: 800px;
+        background: url(../images/bg-home.jpg) no-repeat center center;
+        background-size: cover;
     }
 }

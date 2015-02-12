@@ -77,7 +77,7 @@
 
     <div id="top"><div><div>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-          <img src="<?php print $base_path.$directory; ?>/images/logo.png" alt="CCI Studios" />
+          <img src="<?php print $base_path.$directory; ?>/images/logo.svg" alt="CCI Studios" />
         </a>
         <a href="#" id="btn-menu" title="Open menu">
             <img src="<?php print $base_path.$directory; ?>/images/btn-menu.png" alt="Open menu" />
