@@ -5,10 +5,24 @@
             $(".view-team .bio.under").hide().removeClass("open under");
             $(".view-team .bio.open").not($bio).css("z-index","1").addClass("under");
             if ($bio.hasClass("open") && $(".view-team .bio.open").length > 1) $bio.hide();
-            $bio.slideDown().addClass("open").css({
+            $bio.addClass("open").css({
                 "z-index":"2",
                 "background-image": "url("+$bio.find(".photo img").attr("src")+")"
             });
+            if ($(".view-team .bio.under").length)
+            {
+                $bio.css({
+                    "left":"-100%",
+                    "right":"100%"
+                }).show().animate({
+                    "left":"0",
+                    "right":"0"
+                });
+            }
+            else
+            {
+                $bio.slideDown();
+            }
             $(".view-team").animate({
                 "margin-bottom":"480px"
             });
