@@ -39,70 +39,125 @@ hr
 
 #top
 {
-    background:white;
     position: fixed;
     top:0;
     left: 0;
     width: 100%;
-    height: 55px;
-    line-height: 55px;
-    box-shadow:0 4px 5px rgba(0,0,0,0.4);
     z-index: 100;
-
-    & > div
-    {
-        width:100%;
-        max-width:980px;
-        margin:0 auto;
-    }
+    height: 51px;
+    background: #106232;
 
     #logo
     {
         display: block;
-        padding-top: 5px;
+        padding-top: 7px;
+        padding-left: 40px;
         float: left;
-        margin-right: 75px;
+        z-index: 101;
+        
+        img
+        {
+            display: block;
+            height: 36px;
+            width: auto;
+        }
+    }
+    
+    #btn-menu
+    {
+        float: right;
+        display: block;
+        height: 51px;
+        line-height: 51px;
+        width: 51px;
+        text-align: center;
+        position: relative;
+        z-index: 101;
+        outline: none;
+        
+        &:active
+        {
+            background-color: #0e572c;
+        }
+        
+        img
+        {
+            vertical-align: middle;
+            display: inline-block;
+            width: 28px;
+            height: 20px;
+        }
     }
 
     #block-system-main-menu
     {
-        .content > ul
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 210px;
+        bottom: 0;
+        background: #106232;
+        z-index: 100;
+        
+        .content
         {
-            list-style:none;
-            margin:0;
-            padding:0;
-            float: left;
-
+            ul
+            {
+                list-style:none;
+                margin:0;
+                padding:80px 0 0 0;
+            }
             li
             {
-                float: left;
                 display: block;
                 list-style:none;
-                margin:0 5px;
+                margin:0;
                 padding:0;
-
-                a
+            }
+            a
+            {
+                display: block;
+                text-decoration:none;
+                color: white;
+                padding:0 10px 0 80px;
+                text-transform:uppercase;
+                height: 60px;
+                line-height: 60px;
+                font-weight: bold;
+                font-size: 1.1em;
+                background-position: 25px center;
+                background-repeat: no-repeat;
+                outline: none;
+                
+                &:hover,
+                &:focus
                 {
-                    display: block;
-                    text-decoration:none;
-                    color:$green;
-                    padding:0 10px;
-                    text-transform:uppercase;
-
-                    &:hover
-                    {
-                        color:white;
-                        text-shadow:-1px 1px 2px rgba(0,0,0,0.4);
-                        box-shadow:0 4px 5px rgba(0,0,0,0.4);
-                        background: $green; /* Old browsers */
-                        background: -moz-linear-gradient(top, #117e40 0%, #0f6e38 100%); /* FF3.6+ */
-                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#117e40), color-stop(100%,#0f6e38)); /* Chrome,Safari4+ */
-                        background: -webkit-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* Chrome10+,Safari5.1+ */
-                        background: -o-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* Opera 11.10+ */
-                        background: -ms-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* IE10+ */
-                        background: linear-gradient(to bottom, #117e40 0%,#0f6e38 100%); /* W3C */
-                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#117e40', endColorstr='#0f6e38',GradientType=0 ); /* IE6-9 */
-                    }
+                    background-color: #0e572c;
+                }
+                
+                &.home
+                {
+                    background-image: url(../images/icon-menu-home.png);
+                }
+                &.culture
+                {
+                    background-image: url(../images/icon-menu-culture.png);
+                }
+                &.services
+                {
+                    background-image: url(../images/icon-menu-services.png);
+                }
+                &.work
+                {
+                    background-image: url(../images/icon-menu-work.png);
+                }
+                &.contact
+                {
+                    background-image: url(../images/icon-menu-contact.png);
+                }
+                &.good-times
+                {
+                    background-image: url(../images/icon-menu-good-times.png);
                 }
             }
         }
@@ -110,34 +165,25 @@ hr
 
     #block-menu-menu-social-menu
     {
-        float: right;
+        position: fixed;
+        width: 210px;
+        bottom: 8px;
+        left: 100%;
+        z-index: 101;
 
         .content > ul
         {
             list-style:none;
             margin:0;
             padding:0;
+            text-align: center;
 
             li
             {
-                float: left;
+                display: inline-block;
                 list-style:none;
                 margin: 0;
                 padding: 0;
-                display: block;
-
-                &:hover
-                {
-                    box-shadow:0 4px 5px rgba(0,0,0,0.4);
-                    background: $green; /* Old browsers */
-                    background: -moz-linear-gradient(top, #117e40 0%, #0f6e38 100%); /* FF3.6+ */
-                    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#117e40), color-stop(100%,#0f6e38)); /* Chrome,Safari4+ */
-                    background: -webkit-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* Chrome10+,Safari5.1+ */
-                    background: -o-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* Opera 11.10+ */
-                    background: -ms-linear-gradient(top, #117e40 0%,#0f6e38 100%); /* IE10+ */
-                    background: linear-gradient(to bottom, #117e40 0%,#0f6e38 100%); /* W3C */
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#117e40', endColorstr='#0f6e38',GradientType=0 ); /* IE6-9 */
-                }
 
                 a
                 {
@@ -146,41 +192,34 @@ hr
                     font-size:0;
                     color:transparent;
                     width: 42px;
+                    height: 42px;
                     background-repeat:no-repeat;
                     background-position:center center;
+                    outline: none;
 
                     &:before
                     {
                         position: absolute;
                         left:-99999px;
                     }
+                    
+                    &:hover,
+                    &:focus
+                    {
+                        background-color: #0e572c;
+                    }
 
                     &.tw
                     {
-                        background-image:url(../images/tw-green.png);
-
-                        &:hover, &:before
-                        {
-                            background-image: url(../images/tw-white.png);
-                        }
+                        background-image:url(../images/tw-white.png);
                     }
                     &.fb
                     {
-                        background-image:url(../images/fb-green.png);
-
-                        &:hover, &:before
-                        {
-                            background-image: url(../images/fb-white.png);
-                        }
+                        background-image:url(../images/fb-white.png);
                     }
                     &.ig
                     {
-                        background-image:url(../images/ig-green.png);
-
-                        &:hover, &:before
-                        {
-                            background-image: url(../images/ig-white.png);
-                        }
+                        background-image:url(../images/ig-white.png);
                     }
                 }
             }

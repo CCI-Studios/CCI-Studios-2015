@@ -79,6 +79,9 @@
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
           <img src="<?php print $base_path.$directory; ?>/images/logo.png" alt="CCI Studios" />
         </a>
+        <a href="#" id="btn-menu" title="Open menu">
+            <img src="<?php print $base_path.$directory; ?>/images/btn-menu.png" alt="Open menu" />
+        </a>
       <?php print render($page['top']); ?>
     </div></div></div>
 
