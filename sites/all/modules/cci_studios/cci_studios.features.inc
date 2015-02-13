@@ -266,7 +266,7 @@ function cci_studios_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('First Name'),
+      'title_label' => t('Name'),
       'help' => '',
     ),
     'testimonial' => array(
