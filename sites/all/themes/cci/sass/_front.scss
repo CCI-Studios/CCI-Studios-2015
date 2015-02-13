@@ -155,4 +155,159 @@
             }
         }
     }
+    
+    .view-quotes
+    {
+        padding: 60px 30px;
+        max-width: 700px;
+        margin: 0 auto;
+        color: $green;
+        text-align: center;
+        
+        .views-field-body
+        {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 24px;
+            line-height: 1.2;
+            padding-top: 65px;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+            background: url(../images/icon-quote.png) no-repeat center top;
+        }
+        .views-field-title
+        {
+            font-size: 20px;
+        }
+    }
+    
+    .block.home-how-we-do-it
+    {
+        background: url(../images/bg-whiteboard.jpg) top center;
+        background-size: cover;
+        
+        .content
+        {
+            color: white;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 30px;
+            line-height: 1.2;
+            
+            h2
+            {
+                text-transform: uppercase;
+                font-size: 2.4em;
+                margin-bottom: 20px;
+            }
+            p
+            {
+                font-size: 18px;
+            }
+            
+            .step
+            {
+                width: 120px;
+                display: inline-block;
+                margin: 20px 100px 40px 0;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-top: 140px;
+                background-repeat: no-repeat;
+                background-position: center top;
+                
+                .num
+                {
+                    line-height: 1;
+                    font-size: 0.9em;
+                }
+                .name
+                {
+                    font-size: 1.8em;
+                    line-height: 1;
+                }
+            }
+            .step-1
+            {
+                background-image: url(../images/step-plan.png);
+            }
+            .step-2
+            {
+                background-image: url(../images/step-design.png);
+            }
+            .step-3
+            {
+                background-image: url(../images/step-develop.png);
+            }
+            .step-4
+            {
+                background-image: url(../images/step-launch.png);
+                margin-right: 0;
+            }
+            
+            a.more
+            {
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                border: 3px solid white;
+                color: white;
+                line-height: 45px;
+                height: 45px;
+                width: 194px;
+                font-size: 18px;
+                font-weight: bold;
+                
+                &:hover
+                {
+                    background: $green;
+                }
+                &:active
+                {
+                    background: none;
+                }
+            }
+        }
+    }
+    
+    .block.home-not-convinced
+    {
+        .content
+        {
+            background: #555555;
+            text-align: center;
+            color: white;
+            padding: 10px 0 30px 0;
+            
+            h2
+            {
+                text-transform: uppercase;
+                line-height: 51px;
+                font-size: 1.75em;
+            }
+            a.more
+            {
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                border: 3px solid white;
+                font-size: 18px;
+                line-height: 45px;
+                height: 45px;
+                width: 194px;
+                font-weight: bold;
+                
+                &:hover
+                {
+                    background: $green;
+                }
+                &:active
+                {
+                    background: none;
+                }
+            }
+        }
+    }
 }

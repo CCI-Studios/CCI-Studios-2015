@@ -253,6 +253,14 @@ function cci_studios_node_info() {
       'title_label' => t('Title'),
       'help' => '',
     ),
+    'quote' => array(
+      'name' => t('Quote'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('From'),
+      'help' => '',
+    ),
     'service' => array(
       'name' => t('Service'),
       'base' => 'node_content',

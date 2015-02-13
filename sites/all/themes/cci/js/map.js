@@ -27,10 +27,13 @@
         
         
         var infowindow = new google.maps.InfoWindow({
-            content: "<h2>CCI Studios</h2><p>136 Christina Street, Sarnia ON, N7T5T9</p><p>info@ccistudios.com</p><p>+1-519-337-8837</p>"
+            content: "<h2>This is where the Good Times happen</h2>",
+            maxWidth: 200
         });
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.open(map, marker);
+            $(".gmap [style*='skewX']").css("background","#106232");
+            $(".gmap").find('div[style*="rgb(255, 255, 255)"]').filter(function () { return this.innerHTML == "" }).css("background","#106232")
         });
     }
 }(jQuery));

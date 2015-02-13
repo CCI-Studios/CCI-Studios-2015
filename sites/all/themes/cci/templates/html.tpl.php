@@ -46,7 +46,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 <head>
   <?php print $head; ?>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
   <title><?php print $head_title; ?></title>
   <script type="text/javascript" src="//use.typekit.net/tai3mzc.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
