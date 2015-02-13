@@ -10,5 +10,149 @@
         height: 800px;
         background: url(../images/bg-home.jpg) no-repeat center center;
         background-size: cover;
+        
+        .content
+        {
+            height: 210px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-top: -105px;
+            font-size: 4em;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 1.05;
+            text-shadow: 0 0 5px rgba(0,0,0,0.15);
+            
+            a
+            {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                line-height: 45px;
+                height: 45px;
+                width: 194px;
+                border: 3px solid white;
+                font-size: 18px;
+                text-shadow: none;
+                
+                &:hover
+                {
+                    background: $green;
+                }
+                &:active
+                {
+                    background: none;
+                }
+            }
+        }
+        .green
+        {
+            color: $green;
+        }
+        .caps
+        {
+            text-transform: uppercase;
+        }
+    }
+    .home-arrow-down
+    {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        width: 60px;
+        height: 30px;
+        margin-left: -30px;
+        background: url(../images/home-arrow-down.png) no-repeat center center;
+        cursor: pointer;
+    }
+    
+    .home-about-us
+    {
+        .content
+        {
+            max-width: 675px;
+            padding: 40px 30px 60px 30px;
+            margin: 0 auto;
+            font-size: 18px;
+            
+            a
+            {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $green;
+                display: inline-block;
+                font-weight: bold;
+                line-height: 45px;
+                height: 45px;
+                width: 196px;
+                text-align: center;
+                border: 3px solid $green;
+                margin-top: 15px;
+                
+                &:hover
+                {
+                    background: $green;
+                    color: white;
+                }
+                &:active
+                {
+                    background: none;
+                    color: $green;
+                }
+            }
+        }
+    }
+    
+    .home-what-we-do
+    {
+        background: url(../images/bg-brick2.jpg) center center;
+        background-size: cover;
+        
+        .content
+        {
+            text-align: center;
+            color: white;
+            max-width: 940px;
+            padding: 50px 30px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.2;
+            
+            h2
+            {
+                font-weight: bold;
+                font-size: 2.4em;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            
+            p
+            {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            ul
+            {
+                list-style: none;
+                margin: 10px 0 0 0;
+                padding: 0;
+            }
+            li
+            {
+                width: 17%;
+                margin: 0 8%;
+                padding: 18px 0;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 24px;
+                text-align: left;
+                line-height: 1;
+            }
+        }
     }
 }
