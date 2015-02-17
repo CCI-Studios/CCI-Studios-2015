@@ -80,7 +80,7 @@
           <img src="<?php print $base_path.$directory; ?>/images/logo.svg" alt="CCI Studios" />
         </a>
         <a href="#" id="btn-menu" title="Open menu">
-            <img src="<?php print $base_path.$directory; ?>/images/btn-menu.png" alt="Open menu" />
+            <img src="<?php print $base_path.$directory; ?>/images/btn-menu.svg" alt="Open menu" />
         </a>
       <?php print render($page['top']); ?>
     </div></div></div>

@@ -457,6 +457,108 @@ function cci_studios_views_default_views() {
   $export['culture_information_headings'] = $view;
 
   $view = new view();
+  $view->name = 'home_work';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Home Work';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Why We\'re the Experts';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '6';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'work_samples' => 'work_samples',
+    'culture_information' => 0,
+    'team_members' => 0,
+    'clients' => 0,
+    'services' => 0,
+    'community_photos' => 0,
+    'community_logos' => 0,
+    'testimonials' => 0,
+  );
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'sample_image',
+    'image_link' => '',
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Short Description */
+  $handler->display->display_options['fields']['field_short_description']['id'] = 'field_short_description';
+  $handler->display->display_options['fields']['field_short_description']['table'] = 'field_data_field_short_description';
+  $handler->display->display_options['fields']['field_short_description']['field'] = 'field_short_description';
+  $handler->display->display_options['fields']['field_short_description']['label'] = '';
+  $handler->display->display_options['fields']['field_short_description']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_short_description']['element_label_colon'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['path']['alter']['text'] = '<a href="[path]" class="hover">
+<div class="title">[title]</div>
+<div class="description">[field_short_description]</div>
+<div class="more">Check it out</div>
+</a>';
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'work_sample' => 'work_sample',
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['home_work'] = $view;
+
+  $view = new view();
   $view->name = 'quotes';
   $view->description = '';
   $view->tag = 'default';
@@ -870,108 +972,6 @@ function cci_studios_views_default_views() {
   $export['testimonials'] = $view;
 
   $view = new view();
-  $view->name = 'work_sample_logos';
-  $view->description = '';
-  $view->tag = 'default';
-  $view->base_table = 'node';
-  $view->human_name = 'Work Sample Logos';
-  $view->core = 7;
-  $view->api_version = '3.0';
-  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
-
-  /* Display: Master */
-  $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = '<none>';
-  $handler->display->display_options['use_more_always'] = FALSE;
-  $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'none';
-  $handler->display->display_options['query']['type'] = 'views_query';
-  $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
-  /* Header: Global: Unfiltered text */
-  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['label'] = 'Links for Filtering';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="#" class="website-design">Website Design</a><a href="#" class="branding">Branding</a><a href="#" class="graphic-design">Graphic Design</a>';
-  /* Relationship: Nodequeue: Queue */
-  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
-  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
-  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
-  $handler->display->display_options['relationships']['nodequeue_rel']['required'] = TRUE;
-  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
-  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
-    'work_samples' => 'work_samples',
-    'culture_information' => 0,
-    'team_members' => 0,
-    'clients' => 0,
-    'services' => 0,
-    'community_photos' => 0,
-    'community_logos' => 0,
-    'testimonials' => 0,
-  );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Sample Type */
-  $handler->display->display_options['fields']['field_sample_type']['id'] = 'field_sample_type';
-  $handler->display->display_options['fields']['field_sample_type']['table'] = 'field_data_field_sample_type';
-  $handler->display->display_options['fields']['field_sample_type']['field'] = 'field_sample_type';
-  $handler->display->display_options['fields']['field_sample_type']['label'] = '';
-  $handler->display->display_options['fields']['field_sample_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_sample_type']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_sample_type']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_sample_type']['multi_type'] = 'ul';
-  /* Field: Content: Logo */
-  $handler->display->display_options['fields']['field_logo']['id'] = 'field_logo';
-  $handler->display->display_options['fields']['field_logo']['table'] = 'field_data_field_logo';
-  $handler->display->display_options['fields']['field_logo']['field'] = 'field_logo';
-  $handler->display->display_options['fields']['field_logo']['label'] = '';
-  $handler->display->display_options['fields']['field_logo']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_logo']['alter']['text'] = '<a href="#"><img src="[field_logo]" alt="[title]" title="[title]" /></a>';
-  $handler->display->display_options['fields']['field_logo']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_logo']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_logo']['type'] = 'image_url';
-  $handler->display->display_options['fields']['field_logo']['settings'] = array(
-    'url_type' => '1',
-    'image_style' => 'sample_logo',
-    'image_link' => '',
-  );
-  /* Sort criterion: Nodequeue: Position */
-  $handler->display->display_options['sorts']['position']['id'] = 'position';
-  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
-  $handler->display->display_options['sorts']['position']['field'] = 'position';
-  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'work_sample' => 'work_sample',
-  );
-
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
-  $export['work_sample_logos'] = $view;
-
-  $view = new view();
   $view->name = 'work_samples';
   $view->description = '';
   $view->tag = 'default';
@@ -1047,15 +1047,12 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
-  /* Field: Content: Sample Type */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_sample_type']['id'] = 'field_sample_type';
   $handler->display->display_options['fields']['field_sample_type']['table'] = 'field_data_field_sample_type';
   $handler->display->display_options['fields']['field_sample_type']['field'] = 'field_sample_type';
   $handler->display->display_options['fields']['field_sample_type']['label'] = '';
   $handler->display->display_options['fields']['field_sample_type']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_sample_type']['type'] = 'taxonomy_term_reference_plain';
-  $handler->display->display_options['fields']['field_sample_type']['delta_offset'] = '0';
-  $handler->display->display_options['fields']['field_sample_type']['multi_type'] = 'ul';
   /* Sort criterion: Nodequeue: Position */
   $handler->display->display_options['sorts']['position']['id'] = 'position';
   $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';

@@ -724,43 +724,6 @@ function cci_studios_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-field_service_icon'
-  $field_instances['node-service-field_service_icon'] = array(
-    'bundle' => 'service',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_service_icon',
-    'label' => 'Service Icon',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 32,
-    ),
-  );
-
   // Exported field_instance: 'node-team_member-body'
   $field_instances['node-team_member-body'] = array(
     'bundle' => 'team_member',
@@ -1230,7 +1193,7 @@ function cci_studios_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -1248,7 +1211,7 @@ function cci_studios_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_image',
-    'label' => 'Image',
+    'label' => 'Thumbnail',
     'required' => 1,
     'settings' => array(
       'alt_field' => 0,
@@ -1257,7 +1220,7 @@ function cci_studios_field_default_field_instances() {
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
-      'min_resolution' => '600x600',
+      'min_resolution' => '400x360',
       'title_field' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1274,12 +1237,18 @@ function cci_studios_field_default_field_instances() {
         'manualcrop_require_cropping' => array(
           'community_photo' => 0,
           'sample_image' => 'sample_image',
+          'team_member_bio' => 0,
           'team_member_photo' => 0,
+          'team_member_thumb' => 0,
+          'testimonial' => 0,
         ),
         'manualcrop_styles_list' => array(
           'community_photo' => 0,
           'sample_image' => 'sample_image',
+          'team_member_bio' => 0,
           'team_member_photo' => 0,
+          'team_member_thumb' => 0,
+          'testimonial' => 0,
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
@@ -1291,20 +1260,18 @@ function cci_studios_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-work_sample-field_logo'
-  $field_instances['node-work_sample-field_logo'] = array(
+  // Exported field_instance: 'node-work_sample-field_short_description'
+  $field_instances['node-work_sample-field_short_description'] = array(
     'bundle' => 'work_sample',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -1315,86 +1282,21 @@ function cci_studios_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_logo',
-    'label' => 'Logo',
+    'field_name' => 'field_short_description',
+    'label' => 'Short Description',
     'required' => 0,
     'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'image',
+      'module' => 'text',
       'settings' => array(
-        'manualcrop_crop_info' => 1,
-        'manualcrop_default_crop_area' => 1,
-        'manualcrop_enable' => 0,
-        'manualcrop_inline_crop' => 0,
-        'manualcrop_instant_crop' => 0,
-        'manualcrop_instant_preview' => 1,
-        'manualcrop_require_cropping' => array(
-          'community_photo' => 0,
-          'sample_image' => 0,
-          'team_member_photo' => 0,
-          'testimonial' => 0,
-        ),
-        'manualcrop_styles_list' => array(
-          'community_photo' => 0,
-          'sample_image' => 0,
-          'team_member_photo' => 0,
-          'testimonial' => 0,
-        ),
-        'manualcrop_styles_mode' => 'exclude',
-        'manualcrop_thumblist' => 0,
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
+        'size' => 60,
       ),
-      'type' => 'image_image',
+      'type' => 'text_textfield',
       'weight' => 35,
-    ),
-  );
-
-  // Exported field_instance: 'node-work_sample-field_sample_type'
-  $field_instances['node-work_sample-field_sample_type'] = array(
-    'bundle' => 'work_sample',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_sample_type',
-    'label' => 'Sample Type',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 32,
     ),
   );
 
@@ -1409,11 +1311,10 @@ function cci_studios_field_default_field_instances() {
   t('Last Name');
   t('Link');
   t('LinkedIn Link');
-  t('Logo');
   t('Options');
   t('Photo');
-  t('Sample Type');
-  t('Service Icon');
+  t('Short Description');
+  t('Thumbnail');
   t('Title');
   t('Twitter Link');
 

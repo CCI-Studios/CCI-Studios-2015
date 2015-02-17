@@ -108,37 +108,13 @@ function cci_studios_image_default_styles() {
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 600,
-          'height' => 600,
+          'height' => 540,
           'upscale' => 0,
-          'respectminimum' => 1,
+          'respectminimum' => 0,
           'onlyscaleifcrop' => 0,
           'style_name' => 'sample_image',
         ),
         'weight' => 0,
-      ),
-    ),
-  );
-
-  // Exported image style: sample_logo.
-  $styles['sample_logo'] = array(
-    'name' => 'sample_logo',
-    'label' => 'Sample Logo',
-    'effects' => array(
-      6 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
-        'name' => 'image_scale',
-        'data' => array(
-          'width' => 185,
-          'height' => 90,
-          'upscale' => 0,
-        ),
-        'weight' => 1,
       ),
     ),
   );

@@ -11,5 +11,22 @@
             
             return false;
         });
+        
+        if ($("body").hasClass("front"))
+        {
+            $(window).on("scroll ready", scrollEvents);
+        }
     });
+    
+    function scrollEvents()
+    {    
+        if ($(window).scrollTop() > $(".block.home-how-we-do-it").offset().top - 51)
+        {
+            $(".block.home-how-we-do-it").addClass("green");
+        }
+        else
+        {
+            $(".block.home-how-we-do-it").removeClass("green");
+        }
+    }
 }(jQuery));
