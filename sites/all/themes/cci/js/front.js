@@ -19,14 +19,15 @@
     });
     
     function scrollEvents()
-    {    
-        if ($(window).scrollTop() > $(".block.home-how-we-do-it").offset().top - 51)
+    {
+        var $block = $(".block.home-how-we-do-it");
+        if ($(window).scrollTop() > $block.offset().top + $block.height() - $(window).height() || $(window).scrollTop() > $block.offset().top - 51)
         {
-            $(".block.home-how-we-do-it").addClass("green");
+            $block.addClass("green");
         }
         else
         {
-            $(".block.home-how-we-do-it").removeClass("green");
+            $block.removeClass("green");
         }
     }
 }(jQuery));
