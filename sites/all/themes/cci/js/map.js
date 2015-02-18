@@ -17,7 +17,7 @@
         var map = new google.maps.Map($(".gmap").get(0),
                         mapOptions);
 
-        var image = '/sites/all/themes/cci/images/maps-marker.png';
+        var image = '/sites/all/themes/cci/images/maps-marker.svg';
         var marker = new google.maps.Marker({
             position: location,
             map: map,
