@@ -144,14 +144,52 @@
             }
             li
             {
-                width: 17%;
-                margin: 0 8%;
-                padding: 18px 0;
+                width: 16%;
+                margin: 0 5%;
+                padding: 18px 0 18px 64px;
                 display: inline-block;
                 font-weight: bold;
                 font-size: 24px;
                 text-align: left;
                 line-height: 1;
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+            .brand
+            {
+                background-image: url(../images/icon-services-brand.svg);
+            }
+            .web
+            {
+                background-image: url(../images/icon-services-web.svg);
+            }
+            .design
+            {
+                background-image: url(../images/icon-services-design.svg);
+            }
+            .social
+            {
+                background-image: url(../images/icon-services-social.svg);
+            }
+            .promo
+            {
+                background-image: url(../images/icon-services-promo.svg);
+            }
+            .mobile
+            {
+                background-image: url(../images/icon-services-mobile.svg);
+            }
+            .a11y
+            {
+                background-image: url(../images/icon-services-a11y.svg);
+            }
+            .interface
+            {
+                background-image: url(../images/icon-services-interface.svg);
+            }
+            .campaign
+            {
+                background-image: url(../images/icon-services-campaign.svg);
             }
         }
     }
