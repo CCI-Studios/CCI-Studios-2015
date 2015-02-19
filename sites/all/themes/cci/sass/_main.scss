@@ -40,6 +40,18 @@ hr
 #page-wrapper
 {
     overflow: hidden;
+    padding-bottom: 663px;
+    
+    & > div
+    {
+        position: relative;
+        z-index: 1;
+        
+        & > div
+        {
+            background: white;
+        }
+    }
 }
 
 body.menu-green
@@ -270,30 +282,14 @@ body.menu-green
 {
     background: white;
     clear: both;
-}
-#bottom2
-{
-    overflow: hidden;
-    padding-top: 51px;
-    padding-bottom: 80px;
-    background: url(../images/bg-footer.jpg) no-repeat center center;
-    background-size: cover;
-    color: white;
-    
-    a
-    {
-        color: white;
-    }
     
     .good-times
     {
         display: block;
-        margin-top: -51px;
         position: relative;
         height: 51px;
         background: $green;
         box-shadow: 0 2px 5px rgba(0,0,0,0.22);
-        margin-bottom: 75px;
         
         &:before
         {
@@ -318,6 +314,25 @@ body.menu-green
             right: 15%;
             top: 0;
         }
+    }
+}
+#bottom2
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 75px;
+    padding-bottom: 80px;
+    background: url(../images/bg-footer.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+    z-index: -1;
+    
+    a
+    {
+        color: white;
     }
 }
 
@@ -606,10 +621,9 @@ div.messages
 
 body.start-a-project
 {
-    #page-wrapper
+    #page-wrapper > div > div
     {
         background:#282828 url(../images/photoshop-frame-top-repeat.png) repeat-x 23px top;
-        margin-top:55px;
 
         &:before
         {
@@ -623,59 +637,35 @@ body.start-a-project
             background: url(../images/photoshop-frame-left-repeat.png) repeat-y left top;
             z-index: -1;
         }
-        &:after
-        {
-            content:"";
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width:100%;
-            height: 14px;
-            background: url(../images/photoshop-frame-bottom-repeat.png) repeat-x left top;
-            z-index: 1;
-        }
 
         & > div
         {
             background:url(../images/photoshop-frame-left.png) no-repeat left top;
 
+
             &:before
             {
-                content:"";
-                display: block;
-                position: absolute;
-                left: 0;
-                bottom: 32px;
-                width:100%;
-                height: 14px;
-                background: url(../images/photoshop-frame-bottom-left.png) no-repeat left top;
-            }
-            &:after
-            {
-                content:"";
+                content: "";
                 display: block;
                 position: absolute;
                 right: 0;
-                bottom: 32px;
-                width:100%;
-                height: 14px;
-                background: url(../images/photoshop-frame-bottom-right.png) no-repeat right top;
-            }
-
-            & > div
-            {
-                background:url(../images/photoshop-frame-top-right.png) no-repeat right top;
+                top: 0;
+                width: 108px;
+                height: 350px;
+                background: url(../images/photoshop-frame-top-right.png) no-repeat;
             }
         }
     }
 
-    #main-wrapper
+    #block-system-main
     {
-        & > div > div
+        background: white;
+        padding: 30px 0;
+        
+        & > div
         {
-            background:white;
-            min-height:800px;
+            max-width: 650px;
+            margin: 0 auto;
         }
     }
 }

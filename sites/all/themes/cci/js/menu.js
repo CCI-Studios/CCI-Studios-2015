@@ -25,7 +25,14 @@
             var top = offset.top;
             $("html, body").animate({
                 "scrollTop":(top-51)+"px"
-            });
+            }, 800);
+            return false;
+        });
+        $("#block-system-main-menu .good-times").click(function(){
+            var offset = $("#bottom1").offset().top+$("#bottom1").outerHeight();
+            $("html, body").animate({
+                "scrollTop":offset+"px"
+            }, 800);
             return false;
         });
         
@@ -49,5 +56,12 @@
                 $("body").removeClass("menu-green");
             }
         });
+        
+        $(window).on("ready resize", adjustFooterSize);
     });
+    
+    function adjustFooterSize()
+    {
+        $("#page-wrapper").css("padding-bottom", $("#bottom2").outerHeight(true)+"px");
+    }
 }(jQuery));

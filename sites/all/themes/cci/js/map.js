@@ -33,7 +33,7 @@
         google.maps.event.addListener(marker, 'click', function() {
             infowindow.open(map, marker);
             $(".gmap [style*='skewX']").css("background","#106232");
-            $(".gmap").find('div[style*="rgb(255, 255, 255)"]').filter(function () { return this.innerHTML == "" }).css("background","#106232")
+            $(".gmap").find('div[style*="rgb(255, 255, 255)"]').filter(function () { return this.innerHTML == "" }).css("background","#106232");
         });
     }
 }(jQuery));

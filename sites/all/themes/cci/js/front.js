@@ -1,6 +1,6 @@
 (function($) {
     $(function(){        
-        $(".block.home-header").height($(window).height());
+        $(window).on("ready resize", adjustHeaderHeight);
         
         $(".block.home-header .content a, .home-arrow-down")
         .click(function(){
@@ -17,6 +17,12 @@
             $(window).on("scroll ready", scrollEvents);
         }
     });
+    
+    function adjustHeaderHeight()
+    {
+        $(".block.home-header").height($(window).height());
+        $(".home-arrow-down").css("top", $(window).height()+"px");
+    }
     
     function scrollEvents()
     {

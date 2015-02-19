@@ -100,13 +100,11 @@
 
     <div id="bottom1"><div><div>
         <?php print render($page['bottom1']); ?>
+        
+        <div class="good-times"></div>
     </div></div></div> <!-- /#bottom1 -->
 
-    <div id="bottom2"><div><div>
-        <div class="good-times">
-            
-        </div>
-        
+    <div id="bottom2"><div><div>        
         <?php print render($page['bottom2']); ?>
     </div></div></div> <!-- /#bottom2 -->
 
