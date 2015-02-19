@@ -41,57 +41,6 @@ function cci_studios_image_default_styles() {
     ),
   );
 
-  // Exported image style: community_logo.
-  $styles['community_logo'] = array(
-    'name' => 'community_logo',
-    'label' => 'Community Logo',
-    'effects' => array(
-      4 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
-        'name' => 'image_scale',
-        'data' => array(
-          'width' => 80,
-          'height' => 80,
-          'upscale' => 0,
-        ),
-        'weight' => 1,
-      ),
-    ),
-  );
-
-  // Exported image style: community_photo.
-  $styles['community_photo'] = array(
-    'name' => 'community_photo',
-    'label' => 'Community Photo',
-    'effects' => array(
-      3 => array(
-        'label' => 'Crop and scale manually',
-        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
-        'effect callback' => 'manualcrop_crop_and_scale_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'manualcrop_crop_and_scale_form',
-        'summary theme' => 'manualcrop_crop_and_scale_summary',
-        'module' => 'manualcrop',
-        'name' => 'manualcrop_crop_and_scale',
-        'data' => array(
-          'width' => 400,
-          'height' => 400,
-          'upscale' => 0,
-          'respectminimum' => 1,
-          'onlyscaleifcrop' => 0,
-          'style_name' => 'community_photo',
-        ),
-        'weight' => 0,
-      ),
-    ),
-  );
-
   // Exported image style: sample_image.
   $styles['sample_image'] = array(
     'name' => 'sample_image',
@@ -140,33 +89,6 @@ function cci_studios_image_default_styles() {
           'respectminimum' => 1,
           'onlyscaleifcrop' => 0,
           'style_name' => 'team_member_photo',
-        ),
-        'weight' => 0,
-      ),
-    ),
-  );
-
-  // Exported image style: testimonial.
-  $styles['testimonial'] = array(
-    'name' => 'testimonial',
-    'label' => 'Testimonial',
-    'effects' => array(
-      7 => array(
-        'label' => 'Crop and scale manually',
-        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
-        'effect callback' => 'manualcrop_crop_and_scale_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'manualcrop_crop_and_scale_form',
-        'summary theme' => 'manualcrop_crop_and_scale_summary',
-        'module' => 'manualcrop',
-        'name' => 'manualcrop_crop_and_scale',
-        'data' => array(
-          'width' => 320,
-          'height' => 320,
-          'upscale' => 0,
-          'respectminimum' => 1,
-          'onlyscaleifcrop' => 0,
-          'style_name' => 'testimonial',
         ),
         'weight' => 0,
       ),
@@ -237,14 +159,6 @@ function cci_studios_node_info() {
       'title_label' => t('From'),
       'help' => '',
     ),
-    'service' => array(
-      'name' => t('Service'),
-      'base' => 'node_content',
-      'description' => '',
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
-    ),
     'team_member' => array(
       'name' => t('Team Member'),
       'base' => 'node_content',
@@ -252,14 +166,6 @@ function cci_studios_node_info() {
       'has_title' => '1',
       'title_label' => t('Name'),
       'help' => '',
-    ),
-    'testimonial' => array(
-      'name' => t('Testimonial'),
-      'base' => 'node_content',
-      'description' => '',
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => t('Pick a meaningful/descriptive title. The title is used as the alt text for the image.'),
     ),
     'work_sample' => array(
       'name' => t('Work Sample'),

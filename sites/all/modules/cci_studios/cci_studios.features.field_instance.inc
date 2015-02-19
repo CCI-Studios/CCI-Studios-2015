@@ -60,13 +60,13 @@ function cci_studios_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'community_photo' => 0,
-          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
           'team_member_photo' => 0,
           'testimonial' => 0,
         ),
         'manualcrop_styles_list' => array(
           'community_photo' => 0,
-          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
           'team_member_photo' => 0,
           'testimonial' => 0,
         ),
@@ -130,13 +130,13 @@ function cci_studios_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'community_photo' => 0,
-          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
           'team_member_photo' => 0,
           'testimonial' => 0,
         ),
         'manualcrop_styles_list' => array(
           'community_photo' => 0,
-          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
           'team_member_photo' => 0,
           'testimonial' => 0,
         ),
@@ -679,51 +679,6 @@ function cci_studios_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-service-body'
-  $field_instances['node-service-body'] = array(
-    'bundle' => 'service',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(
-          'trim_length' => 600,
-        ),
-        'type' => 'text_summary_or_trimmed',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'body',
-    'label' => 'Body',
-    'required' => 1,
-    'settings' => array(
-      'display_summary' => 0,
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 20,
-        'summary_rows' => 5,
-      ),
-      'type' => 'text_textarea_with_summary',
-      'weight' => 31,
-    ),
-  );
-
   // Exported field_instance: 'node-team_member-body'
   $field_instances['node-team_member-body'] = array(
     'bundle' => 'team_member',
@@ -1122,13 +1077,13 @@ function cci_studios_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'community_photo' => 0,
-          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
           'team_member_photo' => 0,
           'testimonial' => 'testimonial',
         ),
         'manualcrop_styles_list' => array(
           'community_photo' => 0,
-          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
           'team_member_photo' => 0,
           'testimonial' => 'testimonial',
         ),
@@ -1182,7 +1137,7 @@ function cci_studios_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 31,
+      'weight' => 3,
     ),
   );
 
@@ -1236,7 +1191,8 @@ function cci_studios_field_default_field_instances() {
         'manualcrop_instant_preview' => 1,
         'manualcrop_require_cropping' => array(
           'community_photo' => 0,
-          'sample_image' => 'sample_image',
+          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
           'team_member_bio' => 0,
           'team_member_photo' => 0,
           'team_member_thumb' => 0,
@@ -1244,7 +1200,8 @@ function cci_studios_field_default_field_instances() {
         ),
         'manualcrop_styles_list' => array(
           'community_photo' => 0,
-          'sample_image' => 'sample_image',
+          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
           'team_member_bio' => 0,
           'team_member_photo' => 0,
           'team_member_thumb' => 0,
@@ -1252,11 +1209,87 @@ function cci_studios_field_default_field_instances() {
         ),
         'manualcrop_styles_mode' => 'include',
         'manualcrop_thumblist' => 0,
-        'preview_image_style' => 'sample_image',
+        'preview_image_style' => 'sample_thumb',
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 34,
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'node-work_sample-field_logo'
+  $field_instances['node-work_sample-field_logo'] = array(
+    'bundle' => 'work_sample',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_logo',
+    'label' => 'Logo',
+    'required' => 1,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'manualcrop_crop_info' => 0,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 1,
+        'manualcrop_inline_crop' => 1,
+        'manualcrop_instant_crop' => 1,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_require_cropping' => array(
+          'community_photo' => 0,
+          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
+          'team_member_bio' => 0,
+          'team_member_photo' => 0,
+          'team_member_thumb' => 0,
+          'testimonial' => 0,
+        ),
+        'manualcrop_styles_list' => array(
+          'community_photo' => 0,
+          'sample_image' => 0,
+          'sample_thumb' => 'sample_thumb',
+          'team_member_bio' => 0,
+          'team_member_photo' => 0,
+          'team_member_thumb' => 0,
+          'testimonial' => 0,
+        ),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+        'preview_image_style' => 'sample_thumb',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 5,
     ),
   );
 
@@ -1296,7 +1329,7 @@ function cci_studios_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 35,
+      'weight' => 2,
     ),
   );
 
@@ -1311,6 +1344,7 @@ function cci_studios_field_default_field_instances() {
   t('Last Name');
   t('Link');
   t('LinkedIn Link');
+  t('Logo');
   t('Options');
   t('Photo');
   t('Short Description');
