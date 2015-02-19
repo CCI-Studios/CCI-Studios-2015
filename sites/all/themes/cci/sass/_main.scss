@@ -269,6 +269,7 @@ body.menu-green
 #bottom1
 {
     background: white;
+    clear: both;
 }
 #bottom2
 {
@@ -1213,6 +1214,28 @@ body.services .block.home-what-we-do
             transition-delay: 3.1s;
         }
     }
-    
-    
+}
+
+body.work
+{
+    #block-system-main
+    {
+        max-width: 700px;
+        padding: 0 30px 30px 30px;
+        margin: 0 auto;
+        
+        h2
+        {
+            text-transform: uppercase;
+            font-size: 2.4em;
+            text-align: center;
+            line-height: 1;
+            padding: 25px 0;
+        }
+        
+        p
+        {
+            font-size: 1.1em;
+        }
+    }
 }
