@@ -340,7 +340,8 @@
     }
 }
 
-.view-quotes
+.view-quotes,
+.views-field-field-quote-text
 {
     padding: 60px 30px;
     max-width: 700px;
@@ -349,7 +350,8 @@
     text-align: center;
     clear: both;
     
-    .views-field-body
+    .views-field-body,
+    .quote-body
     {
         font-weight: bold;
         font-style: italic;
@@ -360,7 +362,8 @@
         text-transform: uppercase;
         background: url(../images/icon-quote.svg) no-repeat center top;
     }
-    .views-field-title
+    .views-field-title,
+    .quote-from
     {
         font-size: 20px;
     }
@@ -463,6 +466,59 @@
         &:hover
         {
             background: $green;
+        }
+    }
+}
+
+.view-project
+{
+    overflow: hidden;
+    padding: 40px 0;
+    
+    .view-content
+    {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    
+    .views-field-field-text-section-1
+    {
+        width: 50%;
+        float: left;
+        font-size: 1.1em;
+        
+        & > div
+        {
+            padding-left: 30px;
+        }
+    }
+    .views-field-field-image-section-1
+    {
+        width: 43%;
+        margin-left: 7%;
+        float: left;
+    }
+    
+    .views-field-field-text-section-2
+    {
+        width: 50%;
+        float: left;
+        font-size: 1.1em;
+        
+        & > div
+        {
+            padding-right: 30px;
+        }
+    }
+    .views-field-field-image-section-2
+    {
+        width: 43%;
+        margin-right: 7%;
+        float: left;
+        
+        & > div
+        {
+            float: right;
         }
     }
 }

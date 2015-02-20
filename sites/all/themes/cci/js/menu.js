@@ -57,11 +57,24 @@
             }
         });
         
-        $(window).on("ready resize", adjustFooterSize);
+        $(window).on("ready load resize", adjustFooterSize);
+        $(window).on("ready resize", adjustTitleSize);
+        
+        $(".view-project [data-link]").each(function(){
+            var link = $(this).data("link");
+            $("#page-title").append("<a href='"+link+"' target='_blank' class='live-project'>View live project</a>");
+        });
     });
     
     function adjustFooterSize()
     {
         $("#page-wrapper").css("padding-bottom", $("#bottom2").outerHeight(true)+"px");
+    }
+    function adjustTitleSize()
+    {
+        $("#page-title").css({
+            "width": $(window).width()+"px",
+            "display": "table-cell"
+        });
     }
 }(jQuery));

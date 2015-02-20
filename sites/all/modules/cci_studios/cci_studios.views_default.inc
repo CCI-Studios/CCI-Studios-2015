@@ -237,6 +237,108 @@ function cci_studios_views_default_views() {
   $export['culture_information_headings'] = $view;
 
   $view = new view();
+  $view->name = 'project';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Project';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = '<none>';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Text Section 1 */
+  $handler->display->display_options['fields']['field_text_section_1']['id'] = 'field_text_section_1';
+  $handler->display->display_options['fields']['field_text_section_1']['table'] = 'field_data_field_text_section_1';
+  $handler->display->display_options['fields']['field_text_section_1']['field'] = 'field_text_section_1';
+  $handler->display->display_options['fields']['field_text_section_1']['label'] = '';
+  $handler->display->display_options['fields']['field_text_section_1']['element_label_colon'] = FALSE;
+  /* Field: Content: Image Section 1 */
+  $handler->display->display_options['fields']['field_image_section_1']['id'] = 'field_image_section_1';
+  $handler->display->display_options['fields']['field_image_section_1']['table'] = 'field_data_field_image_section_1';
+  $handler->display->display_options['fields']['field_image_section_1']['field'] = 'field_image_section_1';
+  $handler->display->display_options['fields']['field_image_section_1']['label'] = '';
+  $handler->display->display_options['fields']['field_image_section_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_section_1']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_section_1']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Quote From */
+  $handler->display->display_options['fields']['field_quote_from']['id'] = 'field_quote_from';
+  $handler->display->display_options['fields']['field_quote_from']['table'] = 'field_data_field_quote_from';
+  $handler->display->display_options['fields']['field_quote_from']['field'] = 'field_quote_from';
+  $handler->display->display_options['fields']['field_quote_from']['label'] = '';
+  $handler->display->display_options['fields']['field_quote_from']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_quote_from']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_quote_from']['alter']['text'] = '- [field_quote_from]';
+  $handler->display->display_options['fields']['field_quote_from']['element_label_colon'] = FALSE;
+  /* Field: Content: Quote Text */
+  $handler->display->display_options['fields']['field_quote_text']['id'] = 'field_quote_text';
+  $handler->display->display_options['fields']['field_quote_text']['table'] = 'field_data_field_quote_text';
+  $handler->display->display_options['fields']['field_quote_text']['field'] = 'field_quote_text';
+  $handler->display->display_options['fields']['field_quote_text']['label'] = '';
+  $handler->display->display_options['fields']['field_quote_text']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_quote_text']['alter']['text'] = '<div class="quote-body">[field_quote_text]</div>
+<div class="quote-from">[field_quote_from]</div>';
+  $handler->display->display_options['fields']['field_quote_text']['element_label_colon'] = FALSE;
+  /* Field: Content: Image Section 2 */
+  $handler->display->display_options['fields']['field_image_section_2']['id'] = 'field_image_section_2';
+  $handler->display->display_options['fields']['field_image_section_2']['table'] = 'field_data_field_image_section_2';
+  $handler->display->display_options['fields']['field_image_section_2']['field'] = 'field_image_section_2';
+  $handler->display->display_options['fields']['field_image_section_2']['label'] = '';
+  $handler->display->display_options['fields']['field_image_section_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_section_2']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image_section_2']['settings'] = array(
+    'image_style' => '',
+    'image_link' => '',
+  );
+  /* Field: Content: Text Section 2 */
+  $handler->display->display_options['fields']['field_text_section_2']['id'] = 'field_text_section_2';
+  $handler->display->display_options['fields']['field_text_section_2']['table'] = 'field_data_field_text_section_2';
+  $handler->display->display_options['fields']['field_text_section_2']['field'] = 'field_text_section_2';
+  $handler->display->display_options['fields']['field_text_section_2']['label'] = '';
+  $handler->display->display_options['fields']['field_text_section_2']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
+  $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
+  $handler->display->display_options['fields']['field_link']['label'] = '';
+  $handler->display->display_options['fields']['field_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_link']['alter']['text'] = '<div data-link="[field_link]"></div>';
+  $handler->display->display_options['fields']['field_link']['element_label_colon'] = FALSE;
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'work_sample' => 'work_sample',
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['project'] = $view;
+
+  $view = new view();
   $view->name = 'quotes';
   $view->description = '';
   $view->tag = 'default';
@@ -565,7 +667,7 @@ function cci_studios_views_default_views() {
     'community_logos' => 0,
     'testimonials' => 0,
   );
-  /* Field: Content: Thumbnail */
+  /* Field: Content: Image (Color) */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';

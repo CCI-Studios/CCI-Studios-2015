@@ -109,33 +109,6 @@ function cci_studios_image_default_styles() {
     ),
   );
 
-  // Exported image style: team_member_photo.
-  $styles['team_member_photo'] = array(
-    'name' => 'team_member_photo',
-    'label' => 'Team Member Photo',
-    'effects' => array(
-      1 => array(
-        'label' => 'Crop and scale manually',
-        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
-        'effect callback' => 'manualcrop_crop_and_scale_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'manualcrop_crop_and_scale_form',
-        'summary theme' => 'manualcrop_crop_and_scale_summary',
-        'module' => 'manualcrop',
-        'name' => 'manualcrop_crop_and_scale',
-        'data' => array(
-          'width' => 310,
-          'height' => 265,
-          'upscale' => 0,
-          'respectminimum' => 1,
-          'onlyscaleifcrop' => 0,
-          'style_name' => 'team_member_photo',
-        ),
-        'weight' => 0,
-      ),
-    ),
-  );
-
   // Exported image style: team_member_thumb.
   $styles['team_member_thumb'] = array(
     'name' => 'team_member_thumb',
@@ -220,5 +193,6 @@ function cci_studios_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

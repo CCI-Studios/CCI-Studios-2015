@@ -9,13 +9,8 @@ scripts[] = js/twitter-fetcher.js
 scripts[] = js/twitter.js
 scripts[] = js/culture-information.js
 scripts[] = js/team.js
-scripts[] = js/community-photos.js
-scripts[] = js/community-logos.js
-scripts[] = js/testimonials.js
-scripts[] = js/samples.js
 scripts[] = js/phases.js
 scripts[] = js/map.js
-scripts[] = js/css3-multi-column.min.js
 scripts[] = js/kerning.js
 
 stylesheets[all][] = css/screen.css
