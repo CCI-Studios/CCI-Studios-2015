@@ -1,0 +1,103 @@
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=date]
+{
+    color: $green;
+    border: 2px solid $green;
+    background: white;
+    -webkit-appearance: none;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 6px;
+    font-size: 1.2em;
+    width: 336px;
+}
+#page-wrapper textarea
+{
+    color: $green;
+    border: 2px solid $green;
+    background: white;
+    -webkit-appearance: none;
+    padding: 0 6px;
+    font-size: 1.2em;
+    width: 336px;
+    height: 4em;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+select
+{
+    color: $green;
+    border: 2px solid $green;
+    background: white;
+    height: 36px;
+    line-height: 36px;
+    font-size: 1.2em;
+    width: 350px;
+}
+
+#webform-client-form-112
+{
+    max-width: 340px;
+    margin: 0 auto;
+    
+    #webform-component-project-budget
+    {
+        position: relative;
+        
+        .field-prefix
+        {
+            position: absolute;
+            left: 5px;
+            bottom: 0;
+            height: 36px;
+            padding: 2px 0;
+            line-height: 36px;
+            width: 10px;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        input
+        {
+            padding-left: 20px;
+            width: 320px;
+        }
+    }
+    
+    .form-actions
+    {
+        margin-top: 2em;
+        
+        .form-submit
+        {
+            display: block;
+            width: 194px;
+            margin: 0 auto;
+            text-align: center;
+            text-transform: uppercase;
+            color: $green;
+            -webkit-appearance: none;
+            appearance: none;
+            line-height: 45px;
+            border: 3px solid $green;
+            background: white;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            
+            &:hover
+            {
+                background: $green;
+                color: white;
+            }
+            &:active
+            {
+                background: white;
+                color: $green;
+            }
+        }
+    }
+}
