@@ -1,0 +1,48 @@
+.view-work-samples
+{
+    .views-row,
+    .views-row.views-row-3,
+    .views-row.views-row-6
+    {
+        width: 49.9%;
+        margin-right: 0.2%;
+        margin-bottom: 0.2%;
+        
+        &.views-row-2,
+        &.views-row-4,
+        &.views-row-6
+        {
+            margin-right: 0;
+        }
+        
+        &:hover
+        {
+            .hover
+            {
+                display: none;
+            }
+            .views-field-field-image img
+            {
+                -webkit-filter: blur(0);
+                -moz-filter: blur(0);
+                filter: blur(0);
+            }
+            .views-field-field-logo
+            {
+                display: block;
+            }
+        }
+    }
+}
+
+.front .block.home-how-we-do-it .content
+{
+    .step
+    {
+        margin-right: 4%;
+    }
+    .step-4
+    {
+        margin-right: 0;
+    }
+}
