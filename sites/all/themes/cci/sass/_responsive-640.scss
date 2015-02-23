@@ -75,3 +75,63 @@
     padding-right: 0;
     margin-bottom: 30px;
 }
+
+.view-team
+{
+    margin-bottom: 0 !important;
+    
+    .thumb
+    {
+        width: auto;
+        height: auto;
+        padding-bottom: 0;
+        display: block;
+        margin: 0 20px;
+        
+        & > div
+        {
+            position: static;
+        }
+        
+        .photo-thumb img
+        {
+            position: static;
+            width: 100%;
+            height: auto;
+            -webkit-filter: blur(0) !important;
+            filter: blur(0) !important;
+        }
+        .thumb-detail
+        {
+            display: none !important;
+        }
+    }
+    
+    .bio
+    {
+        display: block !important;
+        background-image: none !important;
+        position: static;
+        height: auto;
+        padding: 0 20px 35px 20px;
+        
+        & > div > div
+        {
+            max-width: none;
+        }
+        
+        .name
+        {
+            padding-top: 0;
+        }
+        .title
+        {
+            height: auto;
+            padding-bottom: 8px;
+        }
+        .close
+        {
+            display: none;
+        }
+    }
+}

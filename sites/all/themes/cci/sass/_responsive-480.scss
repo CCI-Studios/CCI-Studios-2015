@@ -23,10 +23,18 @@
     padding: 20px;
 }
 
-.view-team h2
+.view-team
 {
-    line-height: 0.9;
-    padding: 20px;
+    h2
+    {
+        line-height: 0.9;
+        padding: 20px;
+    }
+    
+    .bio .name
+    {
+        font-size: 1.75em;
+    }
 }
 
 .view-clients .view-content ul li

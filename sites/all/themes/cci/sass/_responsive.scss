@@ -37,3 +37,12 @@
 {
     @import "responsive-360"; 
 }
+
+
+@media screen and (max-height:500px)
+{
+    #top #block-system-main-menu .content ul
+    {
+        padding-top: 50px;
+    }
+}

@@ -19,12 +19,6 @@
     height: 200px;    
 }
 
-#bottom2
-{
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
 .view-culture-information-headings
 {
     display: none;
@@ -87,6 +81,11 @@
     {
         line-height: 1;
         font-size: 20px;
-        padding-bottom: 0;
+        padding-bottom: 5px;
+    }
+    .views-field-title,
+    .quote-from
+    {
+        line-height: 1;
     }
 }

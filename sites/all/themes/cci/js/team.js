@@ -1,6 +1,6 @@
 (function($) {
     $(function(){        
-        $(".view-team .btn-bio").click(function(){
+        $(".view-team .btn-bio, .view-team .thumb").click(function(){
             var $bio = $(this).parents(".thumb").next().filter(".bio");
             $(".view-team .bio.under").hide().removeClass("open under");
             $(".view-team .bio.open").not($bio).css("z-index","1").addClass("under");
