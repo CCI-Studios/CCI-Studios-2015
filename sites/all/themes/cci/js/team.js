@@ -1,7 +1,12 @@
 (function($) {
     $(function(){        
-        $(".view-team .btn-bio, .view-team .thumb").click(function(){
-            var $bio = $(this).parents(".thumb").next().filter(".bio");
+        $(".view-team .thumb").click(function(){
+            var $thumb = $(this);
+            if (!$thumb.hasClass("thumb"))
+            {
+                $(this).parents(".thumb");
+            }
+            var $bio = $thumb.next().filter(".bio");
             $(".view-team .bio.under").hide().removeClass("open under");
             $(".view-team .bio.open").not($bio).css("z-index","1").addClass("under");
             if ($bio.hasClass("open") && $(".view-team .bio.open").length > 1) $bio.hide();
