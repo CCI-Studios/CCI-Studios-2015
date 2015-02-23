@@ -231,14 +231,16 @@
             times[n].textContent = dateString;
           }
         }
-        
-        var handle = authors[n].innerText.substr(authors[n].innerText.lastIndexOf("@")).trim();
-        var name = authors[n].innerText.substr(0, authors[n].innerText.lastIndexOf("@")-1).trim();
+        var author = jQuery(authors[n]).text();
+        var handle = author.substr(author.lastIndexOf("@")).trim();
+        var name = author.substr(0, author.lastIndexOf("@")-1).trim();
+        var text = jQuery(tweets[n]).text();
+        var time = jQuery(times[n]).text();
         var tweetObj = {
-            "text": tweets[n].innerText,
+            "text": text,
             "name": name,
             "handle": handle,
-            "time": times[n].innerText,
+            "time": time,
             "avatar": avatars[n].src,
             "link": links[n].href,
             "userLink": userLinks[n].href
