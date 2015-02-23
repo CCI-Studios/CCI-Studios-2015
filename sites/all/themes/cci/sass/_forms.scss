@@ -12,7 +12,7 @@ input[type=date]
     line-height: 36px;
     padding: 0 6px;
     font-size: 1.2em;
-    width: 336px;
+    width: 324px;
 }
 #page-wrapper textarea
 {
@@ -22,7 +22,7 @@ input[type=date]
     -webkit-appearance: none;
     padding: 0 6px;
     font-size: 1.2em;
-    width: 336px;
+    width: 324px;
     height: 4em;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
@@ -36,13 +36,18 @@ select
     height: 36px;
     line-height: 36px;
     font-size: 1.2em;
-    width: 350px;
+    width: 340px;
 }
 
 #webform-client-form-112
 {
-    max-width: 340px;
+    max-width: 380px;
     margin: 0 auto;
+    
+    & > div
+    {
+        padding: 0 20px;
+    }
     
     #webform-component-project-budget
     {
@@ -63,7 +68,7 @@ select
         input
         {
             padding-left: 20px;
-            width: 320px;
+            width: 310px;
         }
     }
     
