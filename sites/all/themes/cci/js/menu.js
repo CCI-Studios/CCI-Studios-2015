@@ -75,7 +75,7 @@
     
     function adjustFooterSize()
     {
-        $("#page-wrapper").css("padding-bottom", $("#bottom2").outerHeight(true)+"px");
+        $("#page-wrapper").css("padding-bottom", $("#bottom2").outerHeight(true)-1+"px");
     }
     function adjustTitleSize()
     {
