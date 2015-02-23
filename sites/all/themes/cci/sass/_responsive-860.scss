@@ -19,3 +19,34 @@
         font-size: 1.8em;
     }
 }
+
+.block.instagram
+{
+    .left
+    {
+        float: none;
+        margin: 0 auto;
+    }
+    .feed
+    {
+        text-align: center;
+    }
+}
+
+.block.twitter
+{
+    .left
+    {
+        float: none;
+        margin: 0 auto;
+    }
+    .feed
+    {
+        text-align: center;
+        
+        .tweet
+        {
+            text-align: left;
+        }
+    }
+}

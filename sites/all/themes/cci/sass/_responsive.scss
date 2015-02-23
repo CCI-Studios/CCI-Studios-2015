@@ -28,6 +28,11 @@
     @import "responsive-540";
 }
 
+@media screen and (max-width:480px)
+{
+    @import "responsive-480";
+}
+
 @media screen and (max-width:360px)
 {
     @import "responsive-360"; 

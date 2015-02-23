@@ -1,0 +1,41 @@
+#page-title
+{
+    font-size: 3.25em;
+    line-height: 0.85;
+}
+
+.block.contact-info .content
+{
+    .address,
+    .email,
+    .phone
+    {
+        line-height: 1;
+        padding: 15px 15px 15px 50px;
+        background-position: 10px center;
+        display: block;
+    }
+}
+
+.front .block.home-work h2
+{
+    line-height: 0.9;
+    padding: 20px;
+}
+
+.view-team h2
+{
+    line-height: 0.9;
+    padding: 20px;
+}
+
+.view-clients .view-content ul li
+{
+    .field-content,
+    a
+    {
+        width: 160px;
+        height: 150px;
+        line-height: 150px;
+    }
+}

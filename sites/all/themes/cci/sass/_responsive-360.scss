@@ -13,3 +13,22 @@
         margin-right: 0;
     }
 }
+
+.block.instagram
+{
+    .feed img
+    {
+        width: 49%;
+        height: auto;
+        margin: 0 0.5% -1px 0.5%;
+    }
+}
+.block.spotify .player
+{
+    max-width: 100%;
+    
+    iframe
+    {
+        width: 100%;
+    }
+}

@@ -8,7 +8,7 @@
     margin-top: -140px;
 }
 
-.front .home-what-we-do .content li
+#main-wrapper .home-what-we-do .content li
 {
     display: block;
     width: 200px;
@@ -17,4 +17,76 @@
 .block.contact-info .content .gmap
 {
     height: 200px;    
+}
+
+#bottom2
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.view-culture-information-headings
+{
+    display: none;
+}
+
+.view-culture-information .view-content
+{
+    height: auto;
+    
+    .views-row
+    {
+        position: static;
+        height: auto;
+        padding: 20px;
+        opacity: 1 !important
+    }
+    .views-field-title
+    {
+        position: static;
+        font-weight: bold;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .views-field-body
+    {
+        padding-top: 0.5em !important;
+        font-size: 1.25em;
+    }
+}
+
+.block.services-how-we-do-it .step
+{
+    padding-left: 0;
+    padding-top: 160px;
+    background-position: top center;
+    
+    &:before
+    {
+        left: 50%;
+    }
+    &.step4
+    {
+        margin-bottom: 0;
+    }
+    
+    .num,
+    .name
+    {
+        text-align: center;
+    }
+}
+
+.view-quotes,
+.views-field-field-quote-text
+{
+    padding: 40px 20px;
+    
+    .views-field-body,
+    .quote-body
+    {
+        line-height: 1;
+        font-size: 20px;
+        padding-bottom: 0;
+    }
 }

@@ -9,6 +9,7 @@
     
     function callback(tweets)
     {
+        $(".block.twitter .feed").empty();
         for (var i in tweets)
         {
             var t = tweets[i];

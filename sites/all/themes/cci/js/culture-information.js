@@ -1,7 +1,7 @@
 (function($) {
     $(function(){
         if ($("body").hasClass("culture"))
-            setActive(1);
+            setActive(0);
 
         getHeadings().find(".focusable").each(function(index){
             $(this).click(function(){
@@ -41,9 +41,11 @@
         var $headingRow = getHeadings().eq(index);
         var headingOffset = $headingRow.position();
         var left = headingOffset.left + ($headingRow.outerWidth(true)/2);
+        var top = headingOffset.top + $headingRow.height();
 
         $marker.animate({
-            "left":left+"px"
+            "left":left+"px",
+            "top":top+"px"
         }, 400, "easeOutCirc");
     }
 }(jQuery));
