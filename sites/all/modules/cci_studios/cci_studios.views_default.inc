@@ -596,6 +596,33 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: Facebook Link */
+  $handler->display->display_options['fields']['field_facebook_link']['id'] = 'field_facebook_link';
+  $handler->display->display_options['fields']['field_facebook_link']['table'] = 'field_data_field_facebook_link';
+  $handler->display->display_options['fields']['field_facebook_link']['field'] = 'field_facebook_link';
+  $handler->display->display_options['fields']['field_facebook_link']['label'] = '';
+  $handler->display->display_options['fields']['field_facebook_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_facebook_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_facebook_link']['alter']['text'] = '<a href="[field_facebook_link]" target="_blank" class="fb" title="[title] on Facebook">[title] on Facebook</a>';
+  $handler->display->display_options['fields']['field_facebook_link']['element_label_colon'] = FALSE;
+  /* Field: Content: Twitter Link */
+  $handler->display->display_options['fields']['field_twitter_link']['id'] = 'field_twitter_link';
+  $handler->display->display_options['fields']['field_twitter_link']['table'] = 'field_data_field_twitter_link';
+  $handler->display->display_options['fields']['field_twitter_link']['field'] = 'field_twitter_link';
+  $handler->display->display_options['fields']['field_twitter_link']['label'] = '';
+  $handler->display->display_options['fields']['field_twitter_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_twitter_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_twitter_link']['alter']['text'] = '<a href="[field_twitter_link]" target="_blank" class="tw" title="[title] on Twitter">[title] on Twitter</a>';
+  $handler->display->display_options['fields']['field_twitter_link']['element_label_colon'] = FALSE;
+  /* Field: Content: LinkedIn Link */
+  $handler->display->display_options['fields']['field_linkedin_link']['id'] = 'field_linkedin_link';
+  $handler->display->display_options['fields']['field_linkedin_link']['table'] = 'field_data_field_linkedin_link';
+  $handler->display->display_options['fields']['field_linkedin_link']['field'] = 'field_linkedin_link';
+  $handler->display->display_options['fields']['field_linkedin_link']['label'] = '';
+  $handler->display->display_options['fields']['field_linkedin_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_linkedin_link']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_linkedin_link']['alter']['text'] = '<a href="[field_linkedin_link]" target="_blank" class="in" title="[title] on LinkedIn">[title] on LinkedIn</a>';
+  $handler->display->display_options['fields']['field_linkedin_link']['element_label_colon'] = FALSE;
   /* Field: Custom: Bio */
   $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
@@ -605,6 +632,7 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div>
 <div class="name">[title]</div>
 <div class="title">[field_title]</div>
+<div class="social">[field_facebook_link][field_twitter_link][field_linkedin_link]</div>
 <div class="body">[body]</div>
 </div>
 <a href="#" class="close" title="Close">Close</a>
