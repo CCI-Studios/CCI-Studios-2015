@@ -1074,3 +1074,12 @@ body.page-node-done
         }
     }
 }
+body.culture,
+body.services,
+body.work
+{
+    #block-system-main
+    {
+        display: none;
+    }
+}
