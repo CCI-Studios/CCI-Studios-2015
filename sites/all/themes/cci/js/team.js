@@ -24,14 +24,14 @@
                 $bio.slideDown();
             }
             $(".view-team").animate({
-                "margin-bottom":"480px"
+                "margin-bottom":"520px"
             });
             var offset = $bio.offset();
             var top = offset.top;
-            if (top + 480 > $(window).scrollTop() + $(window).height())
+            if (top + 520 > $(window).scrollTop() + $(window).height())
             {
                 $("html, body").animate({
-                    "scrollTop":(top - $(window).height() + 480)+"px"
+                    "scrollTop":(top - $(window).height() + 520)+"px"
                 });
             }
             return false;
