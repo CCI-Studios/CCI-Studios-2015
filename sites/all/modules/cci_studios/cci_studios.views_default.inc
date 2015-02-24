@@ -292,6 +292,7 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['field_quote_text']['alter']['text'] = '<div class="quote-body">[field_quote_text]</div>
 <div class="quote-from">[field_quote_from]</div>';
   $handler->display->display_options['fields']['field_quote_text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_quote_text']['hide_empty'] = TRUE;
   /* Field: Content: Image Section 2 */
   $handler->display->display_options['fields']['field_image_section_2']['id'] = 'field_image_section_2';
   $handler->display->display_options['fields']['field_image_section_2']['table'] = 'field_data_field_image_section_2';

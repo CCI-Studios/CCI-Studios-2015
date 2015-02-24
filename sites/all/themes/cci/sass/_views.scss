@@ -526,6 +526,7 @@
         width: 43%;
         margin-left: 7%;
         float: left;
+        margin-bottom: 30px;
     }
     
     .views-field-field-text-section-2
@@ -549,5 +550,9 @@
         {
             float: right;
         }
+    }
+    .views-field-field-quote-text
+    {
+        padding-top: 30px;
     }
 }
