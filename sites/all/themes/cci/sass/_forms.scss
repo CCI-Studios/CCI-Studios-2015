@@ -13,6 +13,7 @@ input[type=date]
     padding: 0 6px;
     font-size: 1.2em;
     width: 324px;
+    border-radius: 5px;
 }
 #page-wrapper textarea
 {
@@ -27,6 +28,7 @@ input[type=date]
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    border-radius: 5px;
 }
 select
 {
@@ -37,6 +39,7 @@ select
     line-height: 36px;
     font-size: 1.2em;
     width: 340px;
+    border-radius: 5px;
 }
 
 #webform-client-form-112
