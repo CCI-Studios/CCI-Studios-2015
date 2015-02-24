@@ -135,3 +135,14 @@
         }
     }
 }
+
+#bottom1 .good-times
+{
+    &:before,
+    &:after
+    {
+        right: auto;
+        left: 50%;
+        margin-left: -62px;
+    }
+}
