@@ -555,6 +555,13 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: First Name */
+  $handler->display->display_options['fields']['field_first_name']['id'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['table'] = 'field_data_field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['field'] = 'field_first_name';
+  $handler->display->display_options['fields']['field_first_name']['label'] = '';
+  $handler->display->display_options['fields']['field_first_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_first_name']['element_label_colon'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['field_title']['id'] = 'field_title';
   $handler->display->display_options['fields']['field_title']['table'] = 'field_data_field_title';
@@ -570,7 +577,7 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="photo-thumb">[field_photo]</div>
 <div class="thumb-detail"><div>
-<div class="name">[title]</div>
+<div class="name">[field_first_name]<br>[title]</div>
 <div class="title">[field_title]</div>
 <div class="full-bio"><div>Full Bio</div></div>
 <a href="#" class="btn-bio">Full Bio</a>
@@ -631,7 +638,7 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['ui_name'] = 'Custom: Bio';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
   $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div>
-<div class="name">[title]</div>
+<div class="name">[field_first_name] [title]</div>
 <div class="title">[field_title]</div>
 <div class="social">[field_facebook_link][field_twitter_link][field_linkedin_link]</div>
 <div class="body">[body]</div>
