@@ -354,7 +354,7 @@ body.menu-green
     overflow: hidden;
     padding-top: 75px;
     padding-bottom: 80px;
-    background: url(../images/bg-footer.jpg) no-repeat center center;
+    background: url(../images/bg-footer.jpg) no-repeat top center;
     background-size: cover;
     color: white;
     z-index: -1;
@@ -1108,4 +1108,22 @@ body.services
     {
         display: none;
     }
+}
+
+#bottom1 .good-times:after
+{
+    background-image: url(../images/icon-png/good-times.png);
+}
+
+.block.instagram h2
+{
+    background-image: url(../images/icon-png/icon-ig.png);
+}
+.block.twitter h2
+{
+    background-image: url(../images/icon-png/icon-tw.png);
+}
+.block.spotify h2
+{
+    background-image: url(../images/icon-png/icon-spotify.png);
 }

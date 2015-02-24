@@ -182,6 +182,9 @@
           tids.push(tmp[x].getAttribute('data-tweet-id'));
           authors.push(getElementsByClassName(tmp[x], 'p-author')[0]);
           times.push(getElementsByClassName(tmp[x], 'dt-updated')[0]);
+          avatars.push(getElementsByClassName(tmp[x], 'avatar')[0]);
+          links.push(getElementsByClassName(tmp[x], 'permalink')[0]);
+          userLinks.push(getElementsByClassName(tmp[x], 'profile')[0]);
           if (getElementsByClassName(tmp[x], 'inline-media')[0] !== undefined) {
             images.push(getElementsByClassName(tmp[x], 'inline-media')[0]);
           } else {
@@ -232,18 +235,21 @@
           }
         }
         var author = jQuery(authors[n]).text();
-        var handle = author.substr(author.lastIndexOf("@")).trim();
-        var name = author.substr(0, author.lastIndexOf("@")-1).trim();
+        var handle = jQuery.trim(author.substr(author.lastIndexOf("@")));
+        var name = jQuery.trim(author.substr(0, author.lastIndexOf("@")-1));
         var text = jQuery(tweets[n]).text();
         var time = jQuery(times[n]).text();
+        var avatar = jQuery(avatars[n]).attr("src");
+        var link = jQuery(links[n]).attr("href");
+        var userLink = jQuery(userLinks[n]).attr("href");
         var tweetObj = {
             "text": text,
             "name": name,
             "handle": handle,
             "time": time,
-            "avatar": avatars[n].src,
-            "link": links[n].href,
-            "userLink": userLinks[n].href
+            "avatar": avatar,
+            "link": link,
+            "userLink": userLink
         };
         if (images[n])
         {

@@ -1,0 +1,216 @@
+.front .block.home-how-we-do-it .step:after
+{
+    display: none;
+}
+
+.view-team .bio
+{
+    background-position: top left;
+    
+    &.under
+    {
+        display: none !important;
+    }
+    
+    & > div > div
+    {
+        background: $green;
+        padding: 0 20px 20px 20px;
+        margin-top: -20px;
+    }
+}
+
+.block.services-how-we-do-it .step:before
+{
+    display: none;
+}
+
+#top
+{
+    background: $green;
+    
+    #logo
+    {
+        width: 123px;
+        height: 51px;
+        padding-top: 0 !important;
+        background: url(../images/icon-png/logo.png) no-repeat center center;
+        
+        img
+        {
+            display: none;
+        }
+    }
+    
+    #btn-menu
+    {
+        background: $green url(../images/icon-png/btn-menu.png) no-repeat center center;
+        
+        img
+        {
+            display: none;
+        }
+    }
+}
+
+#top #block-system-main-menu .content a
+{
+    &.home:before
+    {
+        background-image: url(../images/icon-png/icon-menu-home.png);
+    }
+    &.culture:before
+    {
+        background-image: url(../images/icon-png/icon-menu-culture.png);
+    }
+    &.services:before
+    {
+        background-image: url(../images/icon-png/icon-menu-services.png);
+    }
+    &.work:before
+    {
+        background-image: url(../images/icon-png/icon-menu-work.png);
+    }
+    &.contact:before
+    {
+        background-image: url(../images/icon-png/icon-menu-contact.png);
+    }
+    &.good-times:before
+    {
+        background-image: url(../images/icon-png/icon-menu-good-times.png);
+    }
+
+}
+#top #block-menu-menu-social-menu .content>ul li a
+{
+    &.tw
+    {
+        background-image: url(../images/icon-png/icon-menu-tw.png);
+    }
+    &.fb
+    {
+        background-image: url(../images/icon-png/icon-menu-fb.png);
+    }
+    &.ig
+    {
+        background-image: url(../images/icon-png/icon-menu-ig.png);
+    }
+}
+.front .home-arrow-down
+{
+    background-image: url(../images/icon-png/home-arrow-down.png);
+}
+.front .home-what-we-do .content
+{
+    .brand
+    {
+        background-image: url(../images/icon-png/icon-services-brand.png);
+    }
+    .web
+    {
+        background-image: url(../images/icon-png/icon-services-web.png);
+    }
+    .design
+    {
+        background-image: url(../images/icon-png/icon-services-design.png);
+    }
+    .social
+    {
+        background-image: url(../images/icon-png/icon-services-social.png);
+    }
+    .promo
+    {
+        background-image: url(../images/icon-png/icon-services-promo.png);
+    }
+    .mobile
+    {
+        background-image: url(../images/icon-png/icon-services-mobile.png);
+    }
+    .a11y
+    {
+        background-image: url(../images/icon-png/icon-services-a11y.png);
+    }
+    .interface
+    {
+        background-image: url(../images/icon-png/icon-services-interface.png);
+    }
+    .campaign
+    {
+        background-image: url(../images/icon-png/icon-services-campaign.png);
+    }
+}
+
+.view-quotes .views-field-body,
+.views-field-field-quote-text .quote-body
+{
+    background-image: url(../images/icon-png/icon-quote.png);
+}
+
+.block.contact-info .content
+{
+    .address
+    {
+        background-image: url(../images/icon-png/icon-address.png);
+    }
+    .email
+    {
+        background-image: url(../images/icon-png/icon-email.png);
+    }
+    .phone
+    {
+        background-image: url(../images/icon-png/icon-phone.png);
+    }
+}
+
+.culture .values
+{
+    background: url(../images/icon-png/values.png) no-repeat center center;
+    width: 290px;
+    height: 196px;
+    display: inline-block;
+    
+    img
+    {
+        display: none;
+    }
+}
+
+body.services .block.home-what-we-do .content
+{
+    .brand
+    {
+        background-image: url(../images/icon-png/icon-services-brand-green.png);
+    }
+    .web
+    {
+        background-image: url(../images/icon-png/icon-services-web-green.png);
+    }
+    .design
+    {
+        background-image: url(../images/icon-png/icon-services-design-green.png);
+    }
+    .social
+    {
+        background-image: url(../images/icon-png/icon-services-social-green.png);
+    }
+    .promo
+    {
+        background-image: url(../images/icon-png/icon-services-promo-green.png);
+    }
+    .mobile
+    {
+        background-image: url(../images/icon-png/icon-services-mobile-green.png);
+    }
+    .a11y
+    {
+        background-image: url(../images/icon-png/icon-services-a11y-green.png);
+    }
+    .interface
+    {
+        background-image: url(../images/icon-png/icon-services-interface-green.png);
+    }
+    .campaign
+    {
+        background-image: url(../images/icon-png/icon-services-campaign-green.png);
+    }
+}

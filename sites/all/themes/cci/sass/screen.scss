@@ -7,3 +7,8 @@
 @import "views";
 @import "front";
 @import "responsive";
+
+.ie8
+{
+    @import "ie8";
+}

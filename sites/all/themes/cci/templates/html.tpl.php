@@ -43,7 +43,8 @@
  * @ingroup themeable
  */
 ?><!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
+<!--[if IE 8]><html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--> <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>"><!-- <![endif]-->
 <head>
   <?php print $head; ?>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
