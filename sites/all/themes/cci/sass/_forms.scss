@@ -72,6 +72,25 @@ select
         }
     }
     
+    #webform-component-good-times label
+    {
+        font-size: 0;
+        width: 100%;
+        text-align: center;
+        
+        &:after
+        {
+            content: "What is your";
+            text-transform: uppercase;
+            display: inline-block;
+            font-size: 16px;
+            padding-bottom: 90px;
+            margin-bottom: 4px;
+            width: 147px;
+            background: url(../images/good-times-question.svg) no-repeat bottom center;
+        }
+    }
+    
     .form-actions
     {
         margin-top: 2em;
