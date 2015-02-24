@@ -134,13 +134,13 @@ body.menu-green
     {
         float: right;
         display: block;
-        width: 51px;
+        width: 41px;
         text-align: center;
         position: relative;
         z-index: 101;
         outline: none;
-        height: 51px;
-        line-height: 51px;
+        height: 41px;
+        line-height: 41px;
         margin: 5px 5px 0 0;
         
         &:active
@@ -151,7 +151,7 @@ body.menu-green
         img
         {
             vertical-align: top;
-            margin-top: 15px;
+            margin-top: 10px;
             display: inline-block;
             width: 28px;
             height: 20px;
