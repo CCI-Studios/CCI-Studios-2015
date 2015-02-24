@@ -18,6 +18,11 @@
     @import "responsive-768";
 }
 
+@media screen and (max-width:760px)
+{
+    @import "responsive-760";
+}
+
 @media screen and (max-width:640px)
 {
     @import "responsive-640";
