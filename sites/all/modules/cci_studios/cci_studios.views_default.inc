@@ -293,6 +293,12 @@ function cci_studios_views_default_views() {
 <div class="quote-from">[field_quote_from]</div>';
   $handler->display->display_options['fields']['field_quote_text']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_quote_text']['hide_empty'] = TRUE;
+  /* Field: Content: Text Section 2 */
+  $handler->display->display_options['fields']['field_text_section_2']['id'] = 'field_text_section_2';
+  $handler->display->display_options['fields']['field_text_section_2']['table'] = 'field_data_field_text_section_2';
+  $handler->display->display_options['fields']['field_text_section_2']['field'] = 'field_text_section_2';
+  $handler->display->display_options['fields']['field_text_section_2']['label'] = '';
+  $handler->display->display_options['fields']['field_text_section_2']['element_label_colon'] = FALSE;
   /* Field: Content: Image Section 2 */
   $handler->display->display_options['fields']['field_image_section_2']['id'] = 'field_image_section_2';
   $handler->display->display_options['fields']['field_image_section_2']['table'] = 'field_data_field_image_section_2';
@@ -304,12 +310,6 @@ function cci_studios_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Content: Text Section 2 */
-  $handler->display->display_options['fields']['field_text_section_2']['id'] = 'field_text_section_2';
-  $handler->display->display_options['fields']['field_text_section_2']['table'] = 'field_data_field_text_section_2';
-  $handler->display->display_options['fields']['field_text_section_2']['field'] = 'field_text_section_2';
-  $handler->display->display_options['fields']['field_text_section_2']['label'] = '';
-  $handler->display->display_options['fields']['field_text_section_2']['element_label_colon'] = FALSE;
   /* Field: Content: Live Project Link */
   $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
   $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
