@@ -8,10 +8,12 @@
     margin-top: -140px;
 }
 
-#main-wrapper .home-what-we-do .content li
+#main-wrapper .block.home-what-we-do .content li
 {
     display: block;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
 }
 
 .block.contact-info .content .gmap

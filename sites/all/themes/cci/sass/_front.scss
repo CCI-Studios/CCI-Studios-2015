@@ -123,6 +123,7 @@
             margin: 0 auto;
             font-size: 18px;
             line-height: 1.2;
+            font-weight: 500;
             
             h2
             {
@@ -138,24 +139,32 @@
                 margin: 0 auto;
             }
             
+            a
+            {
+                color: white;
+                text-decoration: none;
+            }
             ul
             {
                 list-style: none;
-                margin: 10px 0 0 0;
+                margin: 30px 0 0 0;
                 padding: 0;
+                font-size: 0;
             }
             li
             {
-                width: 16%;
+                width: 23%;
                 margin: 0 5%;
-                padding: 18px 0 18px 64px;
+                padding: 108px 0 18px 0;
                 display: inline-block;
                 font-weight: bold;
                 font-size: 24px;
-                text-align: left;
+                text-align: center;
                 line-height: 1;
                 background-repeat: no-repeat;
-                background-position: left center;
+                background-position: top center;
+                background-size: 100px 100px;
+                vertical-align: top;
             }
             .brand
             {
@@ -169,29 +178,14 @@
             {
                 background-image: url(../images/icon-services-design.svg);
             }
-            .social
+            .social,
+            .promo,
+            .mobile,
+            .a11y,
+            .interface,
+            .campaign,
             {
-                background-image: url(../images/icon-services-social.svg);
-            }
-            .promo
-            {
-                background-image: url(../images/icon-services-promo.svg);
-            }
-            .mobile
-            {
-                background-image: url(../images/icon-services-mobile.svg);
-            }
-            .a11y
-            {
-                background-image: url(../images/icon-services-a11y.svg);
-            }
-            .interface
-            {
-                background-image: url(../images/icon-services-interface.svg);
-            }
-            .campaign
-            {
-                background-image: url(../images/icon-services-campaign.svg);
+                display: none;
             }
         }
     }

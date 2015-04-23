@@ -844,6 +844,11 @@ body.services .block.home-what-we-do
             margin: 0 auto;
         }
         
+        a
+        {
+            text-decoration: none;
+            cursor: default;
+        }
         ul
         {
             list-style: none;
