@@ -48,7 +48,6 @@
 <head>
   <?php print $head; ?>
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-  <meta name="description" content="CCI Studios is a creative agency that develops custom marketing and promotional initiatives to assist our clients in reaching their highest levels of success. Our specialized team, best defined by their progressive thinking and refreshingly original strategies, is committed to transforming creative and imaginative ideas into professional and customized results, while incorporating Good Times into every project along the way!">
   <title><?php print $head_title; ?></title>
   <script type="text/javascript" src="//use.typekit.net/tai3mzc.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
