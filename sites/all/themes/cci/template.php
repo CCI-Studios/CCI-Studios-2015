@@ -12,6 +12,9 @@ function cci_preprocess_html(&$vars) {
 function cci_preprocess_page(&$variables, $hook)
 {
     drupal_add_library('system','effects');
+    
+    $googleMapsAPIKey = 'AIzaSyBbqUxAxDiNBiPVBuS6xtU5EveuN1UFor4';
+	drupal_add_js("https://maps.googleapis.com/maps/api/js?key=$googleMapsAPIKey", 'external');
 }
 
 function cci_form_alter(&$form, &$form_state, $form_id)
