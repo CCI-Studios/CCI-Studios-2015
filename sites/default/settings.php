@@ -266,7 +266,7 @@ $drupal_hash_salt = '';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-$base_url = 'https://ccistudios.com';  // NO trailing slash!
+#$base_url = 'https://ccistudios.com';  // NO trailing slash!
 
 /**
  * PHP settings:
@@ -607,6 +607,10 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   $conf['cache_lifetime'] = 0;
   // Cached page compression - always off.
   $conf['page_compression'] = 0;
+  
+  if ($_SERVER['PANTHEON_ENVIRONMENT'] == 'live') {
+      $base_url = 'https://ccistudios.com';  // NO trailing slash!
+  }
 }
 else
 {
