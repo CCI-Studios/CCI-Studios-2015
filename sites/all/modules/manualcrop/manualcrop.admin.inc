@@ -727,8 +727,11 @@ function manualcrop_field_widget_settings_form($widget_type, $settings) {
     '#default_value' => $settings['manualcrop_styles_mode'],
   );
 
+<<<<<<< HEAD
   $style_options = array_map('check_plain', $style_options);
 
+=======
+>>>>>>> b5ff72113546f92fcd1deb4c449c8c0bc3535144
   $form['manualcrop']['manualcrop_styles_list'] = array(
     '#type' => 'checkboxes',
     '#title' => t('Styles list'),
