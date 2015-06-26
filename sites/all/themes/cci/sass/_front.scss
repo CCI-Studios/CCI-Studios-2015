@@ -1,0 +1,376 @@
+.front
+{
+    #block-system-main,
+    #page-title
+    {
+        display: none !important;
+    }
+    .block.home-header
+    {
+        height: 800px;
+        background: url(../images/bg-home.jpg) no-repeat center center;
+        background-size: cover;
+        position: relative;
+        
+        .content
+        {
+            height: 210px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-top: -105px;
+            font-size: 4em;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            line-height: 1.05;
+            text-shadow: 0 0 5px rgba(0,0,0,0.15);
+            
+            a
+            {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                line-height: 45px;
+                height: 45px;
+                width: 194px;
+                border: 3px solid white;
+                font-size: 18px;
+                text-shadow: none;
+                
+                &:hover
+                {
+                    background: $green;
+                }
+                &:active
+                {
+                    background: none;
+                }
+            }
+        }
+        .green
+        {
+            color: $green;
+        }
+        .caps
+        {
+            text-transform: uppercase;
+        }
+    }
+    .home-arrow-down
+    {
+        position: absolute;
+        left: 50%;
+        width: 60px;
+        height: 30px;
+        margin-left: -30px;
+        margin-top: -55px;
+        background: url(../images/home-arrow-down.svg) no-repeat center center;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .home-about-us
+    {
+        .content
+        {
+            max-width: 675px;
+            padding: 40px 30px 60px 30px;
+            margin: 0 auto;
+            font-size: 18px;
+            
+            a
+            {
+                text-decoration: none;
+                text-transform: uppercase;
+                color: $green;
+                display: inline-block;
+                font-weight: bold;
+                line-height: 45px;
+                height: 45px;
+                width: 196px;
+                text-align: center;
+                border: 3px solid $green;
+                margin-top: 15px;
+                
+                &:hover
+                {
+                    background: $green;
+                    color: white;
+                }
+                &:active
+                {
+                    background: none;
+                    color: $green;
+                }
+            }
+        }
+    }
+    
+    .home-what-we-do
+    {
+        background: url(../images/bg-brick2.jpg) center center;
+        background-size: cover;
+        
+        .content
+        {
+            text-align: center;
+            color: white;
+            max-width: 940px;
+            padding: 50px 30px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.2;
+            font-weight: 500;
+            
+            h2
+            {
+                font-weight: bold;
+                font-size: 2.4em;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            
+            p
+            {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            a
+            {
+                color: white;
+                text-decoration: none;
+            }
+            ul
+            {
+                list-style: none;
+                margin: 30px 0 0 0;
+                padding: 0;
+                font-size: 0;
+            }
+            li
+            {
+                width: 23%;
+                margin: 0 5%;
+                padding: 108px 0 18px 0;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 24px;
+                text-align: center;
+                line-height: 1;
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: 100px 100px;
+                vertical-align: top;
+            }
+            .brand
+            {
+                background-image: url(../images/icon-services-brand.svg);
+            }
+            .web
+            {
+                background-image: url(../images/icon-services-web.svg);
+            }
+            .design
+            {
+                background-image: url(../images/icon-services-design.svg);
+            }
+            .social,
+            .promo,
+            .mobile,
+            .a11y,
+            .interface,
+            .campaign,
+            {
+                display: none;
+            }
+        }
+    }
+    
+    .block.home-how-we-do-it
+    {
+        background: url(../images/bg-whiteboard.jpg) top center;
+        background-size: cover;
+        
+        .content
+        {
+            color: white;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 30px;
+            line-height: 1.2;
+            position: relative;
+            z-index: 1;
+            
+            h2
+            {
+                text-transform: uppercase;
+                font-size: 2.4em;
+                margin-bottom: 20px;
+            }
+            p
+            {
+                font-size: 18px;
+            }
+            
+            .step
+            {
+                width: 120px;
+                display: inline-block;
+                margin: 20px 100px 40px 0;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-top: 140px;
+                background-repeat: no-repeat;
+                background-position: center top;
+                position: relative;
+                
+                .num
+                {
+                    line-height: 1;
+                    font-size: 0.9em;
+                }
+                .name
+                {
+                    font-size: 1.8em;
+                    line-height: 1;
+                }
+                &:after
+                {
+                    content: "";
+                    position: absolute;
+                    left: 60px;
+                    top: 60px;
+                    border-radius: 130px;
+                    width: 0;
+                    height: 0;
+                    background: $green;
+                    transition: all 0.4s ease-in-out;
+                    margin-left: 0;
+                    margin-top: 0;
+                    z-index: -1;
+                }
+            }
+            .step-1
+            {
+                background-image: url(../images/step-plan.png);
+            }
+            .step-2
+            {
+                background-image: url(../images/step-design.png);
+                
+                &:after
+                {
+                    transition-delay: 0.6s;
+                }
+            }
+            .step-3
+            {
+                background-image: url(../images/step-develop.png);
+                
+                &:after
+                {
+                    transition-delay: 1.2s;
+                }
+            }
+            .step-4
+            {
+                background-image: url(../images/step-launch.png);
+                margin-right: 0;
+                
+                &:after
+                {
+                    transition-delay: 1.8s;
+                }
+            }
+            
+            a.more
+            {
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                border: 3px solid white;
+                color: white;
+                line-height: 45px;
+                height: 45px;
+                width: 194px;
+                font-size: 18px;
+                font-weight: bold;
+                
+                &:hover
+                {
+                    background: $green;
+                }
+                &:active
+                {
+                    background: none;
+                }
+            }
+        }
+        &.green .content .step:after
+        {
+            width: 130px;
+            height: 130px;
+            margin-left: -65px;
+            margin-top: -65px;
+        }
+    }
+    
+    .block.home-work
+    {
+        overflow: hidden;
+        
+        h2
+        {
+            line-height: 88px;
+            text-transform: uppercase;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2.4em;
+        }
+    }
+    
+    .block.home-not-convinced
+    {
+        .content
+        {
+            background: #555555;
+            text-align: center;
+            color: white;
+            padding: 10px 0 30px 0;
+            
+            h2
+            {
+                text-transform: uppercase;
+                line-height: 51px;
+                font-size: 1.75em;
+            }
+            a.more
+            {
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                text-transform: uppercase;
+                border: 3px solid white;
+                font-size: 18px;
+                line-height: 45px;
+                height: 45px;
+                width: 194px;
+                font-weight: bold;
+                
+                &:hover
+                {
+                    background: $green;
+                }
+                &:active
+                {
+                    background: none;
+                }
+            }
+        }
+    }
+}

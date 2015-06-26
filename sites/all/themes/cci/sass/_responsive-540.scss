@@ -1,0 +1,93 @@
+.front .block.home-header .content
+{
+    font-size: 3.25em;
+    width: 320px;
+    height: 280px;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -140px;
+}
+
+#main-wrapper .block.home-what-we-do .content li
+{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+.block.contact-info .content .gmap
+{
+    height: 200px;    
+}
+
+.view-culture-information-headings
+{
+    display: none;
+}
+
+.view-culture-information .view-content
+{
+    height: auto;
+    
+    .views-row
+    {
+        position: static;
+        height: auto;
+        padding: 20px;
+        opacity: 1 !important
+    }
+    .views-field-title
+    {
+        position: static;
+        font-weight: bold;
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .views-field-body
+    {
+        padding-top: 0.5em !important;
+        font-size: 1.25em;
+    }
+}
+
+.block.services-how-we-do-it .step
+{
+    padding-left: 0;
+    padding-top: 160px;
+    background-position: top center;
+    
+    &:before
+    {
+        left: 50%;
+    }
+    &.step4
+    {
+        margin-bottom: 0;
+    }
+    
+    .num,
+    .name
+    {
+        text-align: center;
+    }
+}
+
+.view-quotes,
+.views-field-field-quote-text
+{
+    padding: 40px 20px;
+    
+    .views-field-body,
+    .quote-body
+    {
+        line-height: 1;
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    .views-field-title,
+    .quote-from
+    {
+        line-height: 1;
+    }
+}

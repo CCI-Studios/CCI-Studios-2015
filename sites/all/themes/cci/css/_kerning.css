@@ -1,0 +1,8 @@
+.view-culture-information-headings .view-content .views-row-3 .focusable
+{
+    -letter-kern: -letter-pairs('VA': -3px);
+}
+.front .block.home-header .content div
+{
+    -letter-kern: -letter-pairs('We':-4px, "e'":-3px, "'r":-2px);
+}

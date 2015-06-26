@@ -1,0 +1,58 @@
+.view-work-samples
+{
+    .title
+    {
+        font-size: 1.75em;
+    }
+}
+
+#bottom2
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.view-team
+{
+    .thumb
+    {
+        width: 33.1333%;
+        padding-bottom: 27.383%;
+        margin: 0.1%;
+    }
+    .name
+    {
+        font-size: 1.8em;
+    }
+}
+
+.block.instagram
+{
+    .left
+    {
+        float: none;
+        margin: 0 auto;
+    }
+    .feed
+    {
+        text-align: center;
+    }
+}
+
+.block.twitter
+{
+    .left
+    {
+        float: none;
+        margin: 0 auto;
+    }
+    .feed
+    {
+        text-align: center;
+        
+        .tweet
+        {
+            text-align: left;
+        }
+    }
+}

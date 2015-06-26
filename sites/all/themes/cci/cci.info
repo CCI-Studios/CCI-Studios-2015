@@ -1,0 +1,22 @@
+name = CCI Studios
+description = CCI Studios Custom
+core = 7.x
+
+scripts[] = js/front.js
+scripts[] = js/menu.js
+scripts[] = js/instagram.js
+scripts[] = js/twitter-fetcher.js
+scripts[] = js/twitter.js
+scripts[] = js/culture-information.js
+scripts[] = js/team.js
+scripts[] = js/phases.js
+scripts[] = js/map.js
+scripts[] = js/kerning.js
+
+stylesheets[all][] = css/screen.css
+
+regions[top] = Top
+regions[help] = Help
+regions[content] = Content
+regions[bottom1] = Bottom 1
+regions[bottom2] = Bottom 2

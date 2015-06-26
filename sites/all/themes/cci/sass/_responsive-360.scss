@@ -1,0 +1,50 @@
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=date],
+select,
+#page-wrapper textarea
+{
+    width: 100%;
+    box-sizing: border-box;
+}
+#webform-client-form-112 #webform-component-project-budget input
+{
+    width: 100%;
+}
+
+.front .block.home-how-we-do-it .content
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    .step
+    {
+        margin-right: 12%;
+    }
+    .step-2,
+    .step-4
+    {
+        margin-right: 0;
+    }
+}
+
+.block.instagram
+{
+    .feed img
+    {
+        width: 49%;
+        height: auto;
+        margin: 0 0.5% -1px 0.5%;
+    }
+}
+.block.spotify .player
+{
+    max-width: 100%;
+    
+    iframe
+    {
+        width: 100%;
+    }
+}
