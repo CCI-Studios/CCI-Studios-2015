@@ -52,7 +52,7 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Field: Content: Live Project Link */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
   $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
   $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
@@ -310,7 +310,7 @@ function cci_studios_views_default_views() {
     'image_style' => '',
     'image_link' => '',
   );
-  /* Field: Content: Live Project Link */
+  /* Field: Content: Link */
   $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
   $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
   $handler->display->display_options['fields']['field_link']['field'] = 'field_link';
@@ -712,7 +712,7 @@ function cci_studios_views_default_views() {
   $handler->display->display_options['fields']['path']['alter']['text'] = '<a href="[path]" class="hover"><div class="title">[title]</div><div class="description">[field_short_description]</div><div class="more">Check it out</div></a>';
   $handler->display->display_options['fields']['path']['element_type'] = 'div';
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Field: Content: Thumbnail */
+  /* Field: Content: Image (Color) */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';

@@ -19,17 +19,9 @@ function cci_studios_image_default_styles() {
 
   // Exported image style: client_logo.
   $styles['client_logo'] = array(
-    'name' => 'client_logo',
     'label' => 'Client Logo',
     'effects' => array(
       11 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
           'width' => 135,
@@ -43,17 +35,9 @@ function cci_studios_image_default_styles() {
 
   // Exported image style: sample_thumb.
   $styles['sample_thumb'] = array(
-    'name' => 'sample_thumb',
     'label' => 'Sample Thumbnail',
     'effects' => array(
       10 => array(
-        'label' => 'Crop and scale manually',
-        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
-        'effect callback' => 'manualcrop_crop_and_scale_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'manualcrop_crop_and_scale_form',
-        'summary theme' => 'manualcrop_crop_and_scale_summary',
-        'module' => 'manualcrop',
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 600,
@@ -70,17 +54,9 @@ function cci_studios_image_default_styles() {
 
   // Exported image style: team_member_bio.
   $styles['team_member_bio'] = array(
-    'name' => 'team_member_bio',
     'label' => 'Team Member Bio',
     'effects' => array(
       8 => array(
-        'label' => 'Manual crop',
-        'help' => 'Crop a freely user-selected area.',
-        'effect callback' => 'manualcrop_crop_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'manualcrop_crop_form',
-        'summary theme' => 'manualcrop_crop_summary',
-        'module' => 'manualcrop',
         'name' => 'manualcrop_crop',
         'data' => array(
           'width' => 1200,
@@ -91,13 +67,6 @@ function cci_studios_image_default_styles() {
         'weight' => 0,
       ),
       9 => array(
-        'label' => 'Scale',
-        'help' => 'Scaling will maintain the aspect-ratio of the original image. If only a single dimension is specified, the other dimension will be calculated.',
-        'effect callback' => 'image_scale_effect',
-        'dimensions callback' => 'image_scale_dimensions',
-        'form callback' => 'image_scale_form',
-        'summary theme' => 'image_scale_summary',
-        'module' => 'image',
         'name' => 'image_scale',
         'data' => array(
           'width' => '',
@@ -111,17 +80,9 @@ function cci_studios_image_default_styles() {
 
   // Exported image style: team_member_thumb.
   $styles['team_member_thumb'] = array(
-    'name' => 'team_member_thumb',
     'label' => 'Team Member Thumb',
     'effects' => array(
       1 => array(
-        'label' => 'Crop and scale manually',
-        'help' => 'Crop and scale a user-selected area, respecting the ratio of the destination width and height.',
-        'effect callback' => 'manualcrop_crop_and_scale_effect',
-        'dimensions callback' => 'image_resize_dimensions',
-        'form callback' => 'manualcrop_crop_and_scale_form',
-        'summary theme' => 'manualcrop_crop_and_scale_summary',
-        'module' => 'manualcrop',
         'name' => 'manualcrop_crop_and_scale',
         'data' => array(
           'width' => 484,
