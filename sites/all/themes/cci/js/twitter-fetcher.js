@@ -240,6 +240,9 @@
         var text = jQuery(tweets[n]).text();
         var time = jQuery(times[n]).text();
         var avatar = jQuery(avatars[n]).attr("src");
+        if (!avatar) {
+            avatar = jQuery(avatars[n]).attr("data-src-1x");
+        }
         var link = jQuery(links[n]).attr("href");
         var userLink = jQuery(userLinks[n]).attr("href");
         var tweetObj = {
