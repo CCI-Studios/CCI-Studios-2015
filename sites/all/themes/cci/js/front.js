@@ -2,7 +2,7 @@
     $(function(){        
         $(window).on("ready resize", adjustHeaderHeight);
         
-        $(".block.home-header .content a, .home-arrow-down")
+        $(".block.home-header .content .scroll-down, .home-arrow-down")
         .click(function(){
             var animationTime = parseInt(1000 * (($(window).height() - $("body").scrollTop()) / $(window).height()));
             $("html, body").animate({
