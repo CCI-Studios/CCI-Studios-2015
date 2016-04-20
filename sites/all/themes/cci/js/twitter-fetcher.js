@@ -152,23 +152,23 @@
       var x = 0;
 
       if (supportsClassName) {
-        var tmp = div.getElementsByClassName('tweet');
+        var tmp = div.getElementsByClassName('timeline-Tweet');
         while (x < tmp.length) {
-          if (tmp[x].getElementsByClassName('retweet-credit').length > 0) {
+          if (tmp[x].getElementsByClassName('timeline-Tweet-retweetCredit').length > 0) {
             rts.push(true);
           } else {
             rts.push(false);
           }
           if (!rts[x] || rts[x] && showRts) {
-            tweets.push(tmp[x].getElementsByClassName('e-entry-title')[0]);
+            tweets.push(tmp[x].getElementsByClassName('timeline-Tweet-text')[0]);
             tids.push(tmp[x].getAttribute('data-tweet-id'));
-            authors.push(tmp[x].getElementsByClassName('p-author')[0]);
+            authors.push(tmp[x].getElementsByClassName('timeline-Tweet-author')[0]);
             times.push(tmp[x].getElementsByClassName('dt-updated')[0]);
-            avatars.push(tmp[x].getElementsByClassName('avatar')[0]);
-            links.push(tmp[x].getElementsByClassName('permalink')[0]);
-            userLinks.push(tmp[x].getElementsByClassName('profile')[0]);
-            if (tmp[x].getElementsByClassName('inline-media')[0] !== undefined) {
-              images.push(tmp[x].getElementsByClassName('inline-media')[0]);
+            avatars.push(tmp[x].getElementsByClassName('Avatar')[0]);
+            links.push(tmp[x].getElementsByClassName('timeline-Tweet-timestamp')[0]);
+            userLinks.push(tmp[x].getElementsByClassName('TweetAuthor-link')[0]);
+            if (tmp[x].getElementsByClassName('timeline-Tweet-media')[0] !== undefined) {
+              images.push(tmp[x].getElementsByClassName('timeline-Tweet-media')[0]);
             } else {
               images.push(undefined);
             }
@@ -176,17 +176,17 @@
           x++;
         }
       } else {
-        var tmp = getElementsByClassName(div, 'tweet');
+        var tmp = getElementsByClassName(div, 'timeline-Tweet');
         while (x < tmp.length) {
-          tweets.push(getElementsByClassName(tmp[x], 'e-entry-title')[0]);
+          tweets.push(getElementsByClassName(tmp[x], 'timeline-Tweet-text')[0]);
           tids.push(tmp[x].getAttribute('data-tweet-id'));
-          authors.push(getElementsByClassName(tmp[x], 'p-author')[0]);
+          authors.push(getElementsByClassName(tmp[x], 'timeline-Tweet-author')[0]);
           times.push(getElementsByClassName(tmp[x], 'dt-updated')[0]);
-          avatars.push(getElementsByClassName(tmp[x], 'avatar')[0]);
-          links.push(getElementsByClassName(tmp[x], 'permalink')[0]);
-          userLinks.push(getElementsByClassName(tmp[x], 'profile')[0]);
-          if (getElementsByClassName(tmp[x], 'inline-media')[0] !== undefined) {
-            images.push(getElementsByClassName(tmp[x], 'inline-media')[0]);
+          avatars.push(getElementsByClassName(tmp[x], 'Avatar')[0]);
+          links.push(getElementsByClassName(tmp[x], 'timeline-Tweet-timestamp')[0]);
+          userLinks.push(getElementsByClassName(tmp[x], 'TweetAuthor-link')[0]);
+          if (getElementsByClassName(tmp[x], 'timeline-Tweet-media')[0] !== undefined) {
+            images.push(getElementsByClassName(tmp[x], 'timeline-Tweet-media')[0]);
           } else {
             images.push(undefined);
           }
