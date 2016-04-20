@@ -236,6 +236,10 @@ body.menu-green
                 {
                     background-image: url(../images/icon-menu-contact.svg);
                 }
+                &.careers:before
+                {
+                    background-image: url(../images/icon-menu-careers.svg);
+                }
                 &.good-times:before
                 {
                     background-image: url(../images/icon-menu-good-times.svg);
@@ -1097,7 +1101,8 @@ body.work.node-type-page
 
 body.node-type-page,
 body.node-type-webform,
-body.page-node-done
+body.page-node-done,
+body.node-type-careers
 {
     #block-system-main
     {
