@@ -105,6 +105,14 @@ function cci_studios_image_default_styles() {
  */
 function cci_studios_node_info() {
   $items = array(
+    'careers' => array(
+      'name' => t('Careers'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'client' => array(
       'name' => t('Client'),
       'base' => 'node_content',
