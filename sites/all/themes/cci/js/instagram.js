@@ -2,7 +2,7 @@
     $(function(){
         $.ajax({
             "type":"GET",
-            "url":"https://api.instagram.com/v1/users/409370993/media/recent?count=4&client_id=ce705d3ca7cb4da08a9006bfe66b80b2",
+            "url":"https://api.instagram.com/v1/users/self/media/recent?count=4&access_token=409370993.1677ed0.9fe33b89c1284829a529b6db07ff55ad",
             "success":callback,
             "dataType":"jsonp"
         });
