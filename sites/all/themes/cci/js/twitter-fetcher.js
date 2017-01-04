@@ -67,13 +67,6 @@
     return a;
   }
 
-  function extractImageUrl(image_data) {
-    if (image_data !== undefined) {
-      var data_src = image_data.innerHTML.match(/data-srcset="([A-z0-9%_\.-]+)/i)[0];
-      return decodeURIComponent(data_src).split('"')[1];
-    }
-  }
-
   var twitterFetcher = {
     fetch: function(config, suppliedCallback) {
       returnCallback = suppliedCallback;
@@ -254,10 +247,6 @@
             "link": link,
             "userLink": userLink
         };
-        if (images[n])
-        {
-            tweetObj.image = extractImageUrl(images[n]);
-        }
         arrayTweets.push(tweetObj);
         n++;
       }
