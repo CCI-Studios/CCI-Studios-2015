@@ -611,6 +611,29 @@ if (defined('PANTHEON_ENVIRONMENT')) {
   if ($_SERVER['PANTHEON_ENVIRONMENT'] == 'live') {
       $base_url = 'https://ccistudios.com';  // NO trailing slash!
   }
+
+  if (($_SERVER['REQUEST_URI'] == '/hfh-home') && (php_sapi_name() != "cli")) {
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/sites/default/files/HabitatSarnia_Home.jpg');
+  
+    # Name transaction "redirect" in New Relic for improved reporting (optional)
+    if (extension_loaded('newrelic')) {
+      newrelic_name_transaction("redirect");
+    }
+  
+    exit();
+  }
+  if (($_SERVER['REQUEST_URI'] == '/hfh-proposal') && (php_sapi_name() != "cli")) {
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://'. $_SERVER['HTTP_HOST'] . '/sites/default/files/CCI%20Studios%20-%20Habitat%20for%20Humanity%20-%20Project%20Proposal.pdf');
+  
+    # Name transaction "redirect" in New Relic for improved reporting (optional)
+    if (extension_loaded('newrelic')) {
+      newrelic_name_transaction("redirect");
+    }
+  
+    exit();
+  }
 }
 else
 {

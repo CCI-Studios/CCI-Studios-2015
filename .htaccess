@@ -58,10 +58,6 @@ DirectoryIndex index.php index.html index.htm
 </IfModule>
 
 # Various rewrite rules.
-
-RewriteRule ^hfh-home$ /sites/default/files/HabitatSarnia_Home.jpg [L]
-RewriteRule ^hfh-proposal$ /sites/default/files/CCI%20Studios%20-%20Habitat%20for%20Humanity%20-%20Project%20Proposal.pdf [L]
-
 <IfModule mod_rewrite.c>
   RewriteEngine on
 
